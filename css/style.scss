@@ -1,4 +1,14 @@
 
+@mixin main-sides-padding {
+  padding-left: calc(16px + (60 - 16) * ((100vw - 320px) / (1200 - 320)));
+  padding-right: calc(16px + (60 - 16) * ((100vw - 320px) / (1200 - 320)));
+  @media (min-width: 1200px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+
 body {
   .main-layout {
     position: relative;
