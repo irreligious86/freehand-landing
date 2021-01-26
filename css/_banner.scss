@@ -1,0 +1,175 @@
+.banner {
+  width: min(1175px, 95%);
+  height: 420px;
+  background: rgba(100, 100, 100, .01);
+  position: relative;
+  .right-arrow {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 16px;
+    top: 16px;
+    z-index: 5;
+    background: url(../img/arrow-right.png);
+    /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
+  }
+
+  .left-arrow {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 16px;
+    top: 16px;
+    z-index: 5;
+    background: url(../img/arrow-left.png);
+    /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
+  }
+
+  .right-arrow-bg {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 1148px;
+    top: 192px;
+    z-index: 3;
+    background: #16133E;
+    border-radius: 5px;
+  }
+
+  .left-arrow-bg {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 568px;
+    top: 192px;
+    z-index: 3;
+    background: #16133E;
+    border-radius: 5px;
+  }
+
+  .rectangle-x {
+    position: absolute;
+    width: 580px;
+    height: 420px;
+    /*left: 594px;*/
+    right: 0;
+    top: 0px;
+    background: url(../img/rectangle-x.png);
+    border-radius: 8px;
+  }
+
+  .view-projects-in-banner {
+    position: absolute;
+    width: 169px;
+    height: 46px;
+    /*left: 158px;*/
+    left: 0px;
+    /*top: 496px;*/
+    top: 330px;
+
+  }
+
+  .view-projects-in-banner > a {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background: #007FFC;
+    border-radius: 8px;
+  }
+
+  .view-projects-in-banner > a > em {
+    position: absolute;
+    height: 16px;
+    left: 20.71%;
+    right: 20.71%;
+    top: calc(50% - 16px / 2);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    color: #FFFFFF;
+  }
+
+  .learn-more-in-banner {
+    position: absolute;
+    width: 152px;
+    height: 46px;
+    /*left: 350px;*/
+    left: 192px;
+    /*top: 496px;*/
+    top: 330px;
+
+  }
+
+  .learn-more-in-banner > a {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    border: 2px solid #007FFC;
+    border-radius: 8px;
+  }
+
+  .learn-more-in-banner > a > em {
+    position: absolute;
+    height: 16px;
+    left: 23.03%;
+    right: 23.03%;
+    top: calc(50% - 16px / 2);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    color: #007FFC;
+  }
+
+  .lorem-ipsum-in-banner {
+    position: absolute;
+    width: 455px;
+    height: 62px;
+    /*left: 158px;*/
+    left: 0px;
+    /*top: 398px;*/
+    top: 220px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 36px;
+    /* or 189% */
+
+    color: #183B56;
+  }
+
+  .freehand-your-brand {
+    position: absolute;
+    width: 455px;
+    height: 204px;
+    /*left: 158px;*/
+    left: 0;
+    /*top: 169px;*/
+    top: 0;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
+    /* or 121% */
+
+    color: #16133E;
+  }
+}

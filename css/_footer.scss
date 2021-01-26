@@ -1,0 +1,210 @@
+footer {
+  width: min(1440px, 95%);
+  height: 574px;
+  background: #16143D;
+  position: relative;
+  display: grid;
+  grid-template-columns: 30% 1fr 1fr 30%;
+  grid-template-rows: 1fr 20%;
+  gap: 3px 3px;
+  grid-template-areas:
+    "general services company contacts"
+    "copyright copyright copyright copyright";
+
+  .general-info {
+    grid-area: general;
+    position: relative;
+
+    .logo {
+      position: absolute;
+      width: 194.71px;
+      height: 27.6px;
+      left: 10%;
+      top: 20%;
+    }
+
+    em.general-info-description {
+      position: absolute;
+      height: 84px;
+      left: 10%;
+      right: 10%;
+      top: calc(50% - 84px / 2 - 20px);
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      /* or 175% */
+
+      color: #FFFFFF;
+    }
+
+    .network-links {
+      position: absolute;
+      top: 65%;
+      left: 10%;
+
+      a {
+        margin: 5px;
+      }
+    }
+  }
+
+  .services {
+    grid-area: services;
+    position: relative;
+
+    em {
+      position: absolute;
+      height: 22px;
+      left: 20%;
+      top: calc(50% - 22px / 2 - 140px);
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 22px;
+      /* identical to box height, or 129% */
+
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      color: #FFFFFF;
+    }
+
+    ul {
+      position: absolute;
+      left: 6%;
+      top: calc(50% - 22px / 2 - 73px);
+      list-style-type: none;
+
+      li {
+        margin-bottom: 20px;
+
+        a {
+          text-decoration: none;
+          letter-spacing: 1.76471px;
+          color: #FFFFFF;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+
+  .company {
+    grid-area: company;
+    position: relative;
+
+    em {
+      position: absolute;
+      height: 22px;
+      left: 20%;
+      top: calc(50% - 22px / 2 - 140px);
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 22px;
+      /* identical to box height, or 129% */
+
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      color: #FFFFFF;
+    }
+
+    ul {
+      position: absolute;
+      left: 6%;
+      top: calc(50% - 22px / 2 - 73px);
+      list-style-type: none;
+
+      li {
+        margin-bottom: 20px;
+
+        a {
+          text-decoration: none;
+          letter-spacing: 1.76471px;
+          color: #FFFFFF;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+
+  .contacts {
+    grid-area: contacts;
+    position: relative;
+
+    em {
+      position: absolute;
+      height: 22px;
+      left: 15%;
+      top: calc(50% - 22px / 2 - 140px);
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 22px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    ul {
+      position: absolute;
+      left: 6%;
+      top: calc(50% - 22px / 2 - 73px);
+      list-style-type: none;
+
+      li {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          letter-spacing: 1.76471px;
+          color: #FFFFFF;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 22px;
+
+          img {
+            padding: 10px;
+          }
+        }
+
+        a.email-address {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    grid-area: copyright;
+    position: relative;
+    padding: 10px;
+
+    em {
+      padding: 8px;
+      position: absolute;
+      top: 35%;
+      left: 41%;
+      right: 41%;
+      color: #FFFFFF;
+    }
+  }
+}

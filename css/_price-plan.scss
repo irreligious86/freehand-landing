@@ -1,0 +1,188 @@
+.price-plan {
+  width: min(1140px, 95%);
+  height: 610px;
+  background: rgba(100, 100, 100, .01);
+  position: relative;
+  em.main-prices-title {
+    position: absolute;
+    height: 52px;
+    left: 0%;
+    right: 27.37%;
+    top: calc(50% - 52px / 2 - 279px);
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    /* identical to box height, or 130% */
+
+    color: #16133E;
+  }
+
+  em.prices-description {
+    position: absolute;
+    height: 16px;
+    left: 0%;
+    right: 39.04%;
+    top: calc(50% - 16px / 2 - 230px);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    /* identical to box height, or 89% */
+
+    color: #5A7184;
+  }
+
+  .started-plan {
+    position: absolute;
+    /*background: #FFFFFF;*/
+    background: rgba(100, 100, 100, .03);
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.03);
+    border-radius: 0px 0px 8px 8px;
+
+    .plan-name {
+      display: block;
+      position: absolute;
+      height: 32px;
+      left: 34%;
+      right: 34%;
+      top: 15%;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 32px;
+      /* identical to box height, or 133% */
+      color: #16133E;
+    }
+
+    .plan-cost {
+      display: block;
+      position: absolute;
+      height: 52px;
+      left: 39%;
+      right: 39%;
+      top: 32%;
+      margin: 0 auto;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 52px;
+      /* identical to box height, or 130% */
+      text-align: center;
+    }
+
+    .plan-periodicity {
+      display: block;
+      position: absolute;
+      height: 24px;
+      left: 40%;
+      right: 40%;
+      margin: 0 auto;
+      top: 42%;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+      color: #87A1B6;
+      margin: 0 auto;
+    }
+
+    .plan-description {
+      display: block;
+      position: absolute;
+      height: 56px;
+      left: 85px;
+      right: 85px;
+      top: 54%;
+      margin: 0 auto;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      /* or 175% */
+      text-align: center;
+      color: #87A1B6;
+    }
+
+    .button-get-started {
+      position: absolute;
+      bottom: 56px;
+      right: 92px;
+      left: 92px;
+      border-radius: 25px;
+      padding: 8px 20px;
+      margin: 0 auto;
+      border: 2px solid black;
+      background: lightyellow;
+      width: 181px;
+      height: 50px;
+    }
+  }
+
+  .started-plan-first {
+    left: 0.18%;
+    right: 68.07%;
+    top: 28.52%;
+    bottom: 0%;
+
+    .thick-line {
+      background: #0593FA;
+    }
+
+    .plan-cost {
+      color: #0593FA;
+    }
+  }
+
+  .started-plan-second {
+    left: 34.21%;
+    right: 34.04%;
+    top: 28.52%;
+    bottom: 0%;
+
+    .thick-line {
+      background: #56CBAE;
+    }
+
+    .plan-cost {
+      color: #56CBAE;
+    }
+  }
+
+  .started-plan-third {
+    left: 68.25%;
+    right: 0%;
+    top: 28.52%;
+    bottom: 0%;
+
+    .thick-line {
+      background: #FA6770;
+    }
+
+    .plan-cost {
+      color: #FA6770;
+    }
+  }
+
+  .thick-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 4px;
+  }
+
+}

@@ -1,19 +1,10 @@
-body .main-layout {
-  position: relative;
-  width: 1440px;
-  height: 4294px;
-  margin: 0 auto;
-  background: rgba(238, 220, 220, 0.01);
-}
-body .main-layout header {
-  position: absolute;
-  width: 1159px;
+header {
+  width: min(1159px, 95%);
   height: 86px;
-  top: 33px;
-  left: 153px;
   background: rgba(100, 100, 100, 0.01);
+  position: relative;
 }
-body .main-layout header .line {
+header .line {
   position: absolute;
   left: 0.04%;
   right: 0.04%;
@@ -21,14 +12,14 @@ body .main-layout header .line {
   bottom: 0%;
   border: 1px solid #EFEEF3;
 }
-body .main-layout header .logo {
+header .logo {
   position: absolute;
   width: 194.71px;
   height: 27.6px;
   left: 0.75px;
   top: 8.75px;
 }
-body .main-layout header .shape-1 {
+header .shape-1 {
   position: absolute;
   left: 0.06%;
   right: 97.65%;
@@ -36,7 +27,7 @@ body .main-layout header .shape-1 {
   bottom: 59.09%;
   /*border: 2px solid #3DB370;*/
 }
-body .main-layout header .shape-2 {
+header .shape-2 {
   position: absolute;
   left: 22.79%;
   right: 83.14%;
@@ -44,14 +35,14 @@ body .main-layout header .shape-2 {
   bottom: 57.73%;
   /*background: #16133D;*/
 }
-body .main-layout header .header-login-button {
+header .header-login-button {
   position: absolute;
   left: 89.82%;
   right: 0.69%;
   top: 0%;
   bottom: 46.51%;
 }
-body .main-layout header .header-login-bg {
+header .header-login-bg {
   position: absolute;
   left: 0px;
   right: 0px;
@@ -61,7 +52,7 @@ body .main-layout header .header-login-bg {
   border: 2px solid #16133E;
   border-radius: 8px;
 }
-body .main-layout header .header-login-title {
+header .header-login-title {
   position: absolute;
   height: 16px;
   left: 31.82%;
@@ -75,14 +66,14 @@ body .main-layout header .header-login-title {
   /* identical to box height, or 100% */
   color: #FFFFFF;
 }
-body .main-layout header .header-sign-in-button {
+header .header-sign-in-button {
   position: absolute;
   left: 78.08%;
   right: 11.56%;
   top: 0%;
   bottom: 46.51%;
 }
-body .main-layout header .header-sign-in-bg {
+header .header-sign-in-bg {
   position: absolute;
   left: 0px;
   right: 0px;
@@ -91,7 +82,7 @@ body .main-layout header .header-sign-in-bg {
   border: 2px solid #16133E;
   border-radius: 8px;
 }
-body .main-layout header .header-sign-in-title {
+header .header-sign-in-title {
   position: absolute;
   height: 16px;
   left: 29.17%;
@@ -105,7 +96,7 @@ body .main-layout header .header-sign-in-title {
   /* identical to box height, or 100% */
   color: #000000;
 }
-body .main-layout header .blog {
+header .blog {
   position: absolute;
   height: 16px;
   left: 62.9%;
@@ -119,7 +110,7 @@ body .main-layout header .blog {
   /* identical to box height, or 100% */
   color: #000000;
 }
-body .main-layout header .pages {
+header .pages {
   position: absolute;
   height: 16px;
   left: 53.67%;
@@ -133,7 +124,7 @@ body .main-layout header .pages {
   /* identical to box height, or 100% */
   color: #000000;
 }
-body .main-layout header .portfolio {
+header .portfolio {
   position: absolute;
   height: 16px;
   left: 43.49%;
@@ -147,7 +138,7 @@ body .main-layout header .portfolio {
   /* identical to box height, or 100% */
   color: #000000;
 }
-body .main-layout header .home {
+header .home {
   position: absolute;
   height: 16px;
   left: 34.43%;
@@ -161,15 +152,14 @@ body .main-layout header .home {
   /* identical to box height, or 100% */
   color: #000000;
 }
-body .main-layout .banner {
-  position: absolute;
-  width: 1175px;
+
+.banner {
+  width: min(1175px, 95%);
   height: 420px;
-  left: 158px;
-  top: 169px;
   background: rgba(100, 100, 100, 0.01);
+  position: relative;
 }
-body .main-layout .banner .right-arrow {
+.banner .right-arrow {
   position: absolute;
   width: 22px;
   height: 22px;
@@ -179,7 +169,7 @@ body .main-layout .banner .right-arrow {
   background: url(../img/arrow-right.png);
   /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
 }
-body .main-layout .banner .left-arrow {
+.banner .left-arrow {
   position: absolute;
   width: 22px;
   height: 22px;
@@ -189,7 +179,7 @@ body .main-layout .banner .left-arrow {
   background: url(../img/arrow-left.png);
   /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
 }
-body .main-layout .banner .right-arrow-bg {
+.banner .right-arrow-bg {
   position: absolute;
   width: 55px;
   height: 55px;
@@ -199,7 +189,7 @@ body .main-layout .banner .right-arrow-bg {
   background: #16133E;
   border-radius: 5px;
 }
-body .main-layout .banner .left-arrow-bg {
+.banner .left-arrow-bg {
   position: absolute;
   width: 55px;
   height: 55px;
@@ -209,7 +199,7 @@ body .main-layout .banner .left-arrow-bg {
   background: #16133E;
   border-radius: 5px;
 }
-body .main-layout .banner .rectangle-x {
+.banner .rectangle-x {
   position: absolute;
   width: 580px;
   height: 420px;
@@ -219,7 +209,7 @@ body .main-layout .banner .rectangle-x {
   background: url(../img/rectangle-x.png);
   border-radius: 8px;
 }
-body .main-layout .banner .view-projects-in-banner {
+.banner .view-projects-in-banner {
   position: absolute;
   width: 169px;
   height: 46px;
@@ -228,7 +218,7 @@ body .main-layout .banner .view-projects-in-banner {
   /*top: 496px;*/
   top: 330px;
 }
-body .main-layout .banner .view-projects-in-banner > a {
+.banner .view-projects-in-banner > a {
   position: absolute;
   left: 0px;
   right: 0px;
@@ -237,7 +227,7 @@ body .main-layout .banner .view-projects-in-banner > a {
   background: #007FFC;
   border-radius: 8px;
 }
-body .main-layout .banner .view-projects-in-banner > a > em {
+.banner .view-projects-in-banner > a > em {
   position: absolute;
   height: 16px;
   left: 20.71%;
@@ -251,7 +241,7 @@ body .main-layout .banner .view-projects-in-banner > a > em {
   /* identical to box height, or 100% */
   color: #FFFFFF;
 }
-body .main-layout .banner .learn-more-in-banner {
+.banner .learn-more-in-banner {
   position: absolute;
   width: 152px;
   height: 46px;
@@ -260,7 +250,7 @@ body .main-layout .banner .learn-more-in-banner {
   /*top: 496px;*/
   top: 330px;
 }
-body .main-layout .banner .learn-more-in-banner > a {
+.banner .learn-more-in-banner > a {
   position: absolute;
   left: 0px;
   right: 0px;
@@ -269,7 +259,7 @@ body .main-layout .banner .learn-more-in-banner > a {
   border: 2px solid #007FFC;
   border-radius: 8px;
 }
-body .main-layout .banner .learn-more-in-banner > a > em {
+.banner .learn-more-in-banner > a > em {
   position: absolute;
   height: 16px;
   left: 23.03%;
@@ -283,7 +273,7 @@ body .main-layout .banner .learn-more-in-banner > a > em {
   /* identical to box height, or 100% */
   color: #007FFC;
 }
-body .main-layout .banner .lorem-ipsum-in-banner {
+.banner .lorem-ipsum-in-banner {
   position: absolute;
   width: 455px;
   height: 62px;
@@ -299,7 +289,7 @@ body .main-layout .banner .lorem-ipsum-in-banner {
   /* or 189% */
   color: #183B56;
 }
-body .main-layout .banner .freehand-your-brand {
+.banner .freehand-your-brand {
   position: absolute;
   width: 455px;
   height: 204px;
@@ -315,15 +305,14 @@ body .main-layout .banner .freehand-your-brand {
   /* or 121% */
   color: #16133E;
 }
-body .main-layout .service {
-  position: absolute;
-  width: 1162px;
+
+.service {
+  width: min(1162px, 95%);
   height: 529px;
-  left: 156px;
-  top: 710px;
   background: rgba(100, 100, 100, 0.01);
+  position: relative;
 }
-body .main-layout .service .service-group-3 {
+.service .service-group-3 {
   position: absolute;
   left: 68.85%;
   right: 0%;
@@ -334,7 +323,7 @@ body .main-layout .service .service-group-3 {
   border-radius: 8px;
   background-color: #eaebef;
 }
-body .main-layout .service .service-group-2 {
+.service .service-group-2 {
   position: absolute;
   left: 34.42%;
   right: 34.42%;
@@ -345,7 +334,7 @@ body .main-layout .service .service-group-2 {
   border-radius: 8px;
   background-color: #eaebef;
 }
-body .main-layout .service .service-group-1 {
+.service .service-group-1 {
   position: absolute;
   left: 0%;
   right: 68.85%;
@@ -356,7 +345,7 @@ body .main-layout .service .service-group-1 {
   border-radius: 8px;
   background-color: #eaebef;
 }
-body .main-layout .service .first-service-title {
+.service .first-service-title {
   position: absolute;
   height: 16px;
   left: 0%;
@@ -371,7 +360,7 @@ body .main-layout .service .first-service-title {
   text-transform: uppercase;
   color: #87A1B6;
 }
-body .main-layout .service .main-service-title {
+.service .main-service-title {
   position: absolute;
   height: 52px;
   left: 0%;
@@ -385,7 +374,7 @@ body .main-layout .service .main-service-title {
   /* identical to box height, or 130% */
   color: #16133E;
 }
-body .main-layout .service .service-description {
+.service .service-description {
   position: absolute;
   height: 16px;
   left: 0%;
@@ -399,7 +388,7 @@ body .main-layout .service .service-description {
   /* identical to box height, or 89% */
   color: #5A7184;
 }
-body .main-layout .service .group-icon {
+.service .group-icon {
   width: 46px;
   height: 42px;
   display: block;
@@ -411,7 +400,7 @@ body .main-layout .service .group-icon {
   border: 2px solid grey;
   border-radius: 8px;
 }
-body .main-layout .service .group-header {
+.service .group-header {
   position: absolute;
   height: 52px;
   left: 15.61%;
@@ -425,7 +414,7 @@ body .main-layout .service .group-header {
   /* identical to box height, or 217% */
   color: #16133E;
 }
-body .main-layout .service .group-content {
+.service .group-content {
   position: absolute;
   /*left: 72.46%;*/
   /*right: 3.87%;*/
@@ -443,7 +432,7 @@ body .main-layout .service .group-content {
   /* or 175% */
   color: #16133E;
 }
-body .main-layout .service .group-end {
+.service .group-end {
   position: absolute;
   height: 52px;
   left: 11.04%;
@@ -457,15 +446,14 @@ body .main-layout .service .group-end {
   /* identical to box height, or 325% */
   color: #16133E;
 }
-body .main-layout .features {
-  position: absolute;
-  width: 1157px;
+
+.features {
+  width: min(1157px, 95%);
   height: 693px;
-  left: 149px;
-  top: 1442px;
   background: rgba(100, 100, 100, 0.01);
+  position: relative;
 }
-body .main-layout .features .first-features-title {
+.features .first-features-title {
   position: absolute;
   height: 16px;
   left: 0%;
@@ -479,7 +467,7 @@ body .main-layout .features .first-features-title {
   /* identical to box height, or 100% */
   color: #87A1B6;
 }
-body .main-layout .features .main-features-title {
+.features .main-features-title {
   position: absolute;
   height: 52px;
   left: 0%;
@@ -493,7 +481,7 @@ body .main-layout .features .main-features-title {
   /* identical to box height, or 130% */
   color: #16133E;
 }
-body .main-layout .features .features-description {
+.features .features-description {
   position: absolute;
   height: 16px;
   left: 0%;
@@ -507,7 +495,7 @@ body .main-layout .features .features-description {
   /* identical to box height, or 89% */
   color: #5A7184;
 }
-body .main-layout .features .img-placeholder-left {
+.features .img-placeholder-left {
   position: absolute;
   left: 0%;
   right: 52.03%;
@@ -516,7 +504,7 @@ body .main-layout .features .img-placeholder-left {
   background: url(../img/features-img-1.png);
   border-radius: 8px;
 }
-body .main-layout .features .img-placeholder-left em {
+.features .img-placeholder-left em {
   display: block;
   position: absolute;
   height: 96px;
@@ -532,7 +520,7 @@ body .main-layout .features .img-placeholder-left em {
   /* or 133% */
   color: #FFFFFF;
 }
-body .main-layout .features .img-placeholder-right {
+.features .img-placeholder-right {
   position: absolute;
   left: 52.03%;
   right: 0%;
@@ -541,7 +529,7 @@ body .main-layout .features .img-placeholder-right {
   background: url(../img/features-img-2.png);
   border-radius: 8px;
 }
-body .main-layout .features .img-placeholder-right em {
+.features .img-placeholder-right em {
   display: block;
   position: absolute;
   height: 96px;
@@ -557,15 +545,14 @@ body .main-layout .features .img-placeholder-right em {
   /* or 133% */
   color: #FFFFFF;
 }
-body .main-layout .price-plan {
-  position: absolute;
-  width: 1140px;
+
+.price-plan {
+  width: min(1140px, 95%);
   height: 610px;
-  left: 149px;
-  top: 2333px;
   background: rgba(100, 100, 100, 0.01);
+  position: relative;
 }
-body .main-layout .price-plan em.main-prices-title {
+.price-plan em.main-prices-title {
   position: absolute;
   height: 52px;
   left: 0%;
@@ -579,7 +566,7 @@ body .main-layout .price-plan em.main-prices-title {
   /* identical to box height, or 130% */
   color: #16133E;
 }
-body .main-layout .price-plan em.prices-description {
+.price-plan em.prices-description {
   position: absolute;
   height: 16px;
   left: 0%;
@@ -593,14 +580,14 @@ body .main-layout .price-plan em.prices-description {
   /* identical to box height, or 89% */
   color: #5A7184;
 }
-body .main-layout .price-plan .started-plan {
+.price-plan .started-plan {
   position: absolute;
   /*background: #FFFFFF;*/
   background: rgba(100, 100, 100, 0.03);
   box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.03);
   border-radius: 0px 0px 8px 8px;
 }
-body .main-layout .price-plan .started-plan .plan-name {
+.price-plan .started-plan .plan-name {
   display: block;
   position: absolute;
   height: 32px;
@@ -615,7 +602,7 @@ body .main-layout .price-plan .started-plan .plan-name {
   /* identical to box height, or 133% */
   color: #16133E;
 }
-body .main-layout .price-plan .started-plan .plan-cost {
+.price-plan .started-plan .plan-cost {
   display: block;
   position: absolute;
   height: 52px;
@@ -631,7 +618,7 @@ body .main-layout .price-plan .started-plan .plan-cost {
   /* identical to box height, or 130% */
   text-align: center;
 }
-body .main-layout .price-plan .started-plan .plan-periodicity {
+.price-plan .started-plan .plan-periodicity {
   display: block;
   position: absolute;
   height: 24px;
@@ -648,7 +635,7 @@ body .main-layout .price-plan .started-plan .plan-periodicity {
   color: #87A1B6;
   margin: 0 auto;
 }
-body .main-layout .price-plan .started-plan .plan-description {
+.price-plan .started-plan .plan-description {
   display: block;
   position: absolute;
   height: 56px;
@@ -665,7 +652,7 @@ body .main-layout .price-plan .started-plan .plan-description {
   text-align: center;
   color: #87A1B6;
 }
-body .main-layout .price-plan .started-plan .button-get-started {
+.price-plan .started-plan .button-get-started {
   position: absolute;
   bottom: 56px;
   right: 92px;
@@ -678,59 +665,58 @@ body .main-layout .price-plan .started-plan .button-get-started {
   width: 181px;
   height: 50px;
 }
-body .main-layout .price-plan .started-plan-first {
+.price-plan .started-plan-first {
   left: 0.18%;
   right: 68.07%;
   top: 28.52%;
   bottom: 0%;
 }
-body .main-layout .price-plan .started-plan-first .thick-line {
+.price-plan .started-plan-first .thick-line {
   background: #0593FA;
 }
-body .main-layout .price-plan .started-plan-first .plan-cost {
+.price-plan .started-plan-first .plan-cost {
   color: #0593FA;
 }
-body .main-layout .price-plan .started-plan-second {
+.price-plan .started-plan-second {
   left: 34.21%;
   right: 34.04%;
   top: 28.52%;
   bottom: 0%;
 }
-body .main-layout .price-plan .started-plan-second .thick-line {
+.price-plan .started-plan-second .thick-line {
   background: #56CBAE;
 }
-body .main-layout .price-plan .started-plan-second .plan-cost {
+.price-plan .started-plan-second .plan-cost {
   color: #56CBAE;
 }
-body .main-layout .price-plan .started-plan-third {
+.price-plan .started-plan-third {
   left: 68.25%;
   right: 0%;
   top: 28.52%;
   bottom: 0%;
 }
-body .main-layout .price-plan .started-plan-third .thick-line {
+.price-plan .started-plan-third .thick-line {
   background: #FA6770;
 }
-body .main-layout .price-plan .started-plan-third .plan-cost {
+.price-plan .started-plan-third .plan-cost {
   color: #FA6770;
 }
-body .main-layout .price-plan .thick-line {
+.price-plan .thick-line {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   height: 4px;
 }
-body .main-layout .ada {
-  position: absolute;
-  width: 1152px;
+
+.ada {
+  width: min(1152px, 95%);
   height: 387px;
-  left: 152px;
-  top: 3140px;
   /*background: rgba(100, 100, 100, .3);*/
   background-image: url("../img/ada-bg.png");
+  position: relative;
 }
-body .main-layout .ada em.main-ada-title {
+.ada em.main-ada-title {
   position: absolute;
   height: 52px;
   left: 21.27%;
@@ -744,7 +730,7 @@ body .main-layout .ada em.main-ada-title {
   /* identical to box height, or 130% */
   color: #FFFFFF;
 }
-body .main-layout .ada em.ada-description {
+.ada em.ada-description {
   position: absolute;
   height: 16px;
   left: 23.52%;
@@ -758,7 +744,7 @@ body .main-layout .ada em.ada-description {
   /* identical to box height, or 89% */
   color: #FFFFFF;
 }
-body .main-layout .ada .button-try {
+.ada .button-try {
   position: absolute;
   left: 32.99%;
   right: 50.35%;
@@ -774,7 +760,7 @@ body .main-layout .ada .button-try {
   /* identical to box height, or 100% */
   color: #16133E;
 }
-body .main-layout .ada .button-watch-demo {
+.ada .button-watch-demo {
   position: absolute;
   left: 50.87%;
   right: 32.47%;
@@ -792,31 +778,30 @@ body .main-layout .ada .button-watch-demo {
   /* identical to box height, or 100% */
   color: #FFFFFF;
 }
-body .main-layout footer {
-  position: absolute;
-  width: 1440px;
+
+footer {
+  width: min(1440px, 95%);
   height: 574px;
-  left: 0px;
-  top: 3720px;
   background: #16143D;
+  position: relative;
   display: grid;
   grid-template-columns: 30% 1fr 1fr 30%;
   grid-template-rows: 1fr 20%;
   gap: 3px 3px;
   grid-template-areas: "general services company contacts" "copyright copyright copyright copyright";
 }
-body .main-layout footer .general-info {
+footer .general-info {
   grid-area: general;
   position: relative;
 }
-body .main-layout footer .general-info .logo {
+footer .general-info .logo {
   position: absolute;
   width: 194.71px;
   height: 27.6px;
   left: 10%;
   top: 20%;
 }
-body .main-layout footer .general-info em.general-info-description {
+footer .general-info em.general-info-description {
   position: absolute;
   height: 84px;
   left: 10%;
@@ -830,19 +815,19 @@ body .main-layout footer .general-info em.general-info-description {
   /* or 175% */
   color: #FFFFFF;
 }
-body .main-layout footer .general-info .network-links {
+footer .general-info .network-links {
   position: absolute;
   top: 65%;
   left: 10%;
 }
-body .main-layout footer .general-info .network-links a {
+footer .general-info .network-links a {
   margin: 5px;
 }
-body .main-layout footer .services {
+footer .services {
   grid-area: services;
   position: relative;
 }
-body .main-layout footer .services em {
+footer .services em {
   position: absolute;
   height: 22px;
   left: 20%;
@@ -857,16 +842,16 @@ body .main-layout footer .services em {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-body .main-layout footer .services ul {
+footer .services ul {
   position: absolute;
   left: 6%;
   top: calc(50% - 22px / 2 - 73px);
   list-style-type: none;
 }
-body .main-layout footer .services ul li {
+footer .services ul li {
   margin-bottom: 20px;
 }
-body .main-layout footer .services ul li a {
+footer .services ul li a {
   text-decoration: none;
   letter-spacing: 1.76471px;
   color: #FFFFFF;
@@ -876,11 +861,11 @@ body .main-layout footer .services ul li a {
   font-size: 15px;
   line-height: 22px;
 }
-body .main-layout footer .company {
+footer .company {
   grid-area: company;
   position: relative;
 }
-body .main-layout footer .company em {
+footer .company em {
   position: absolute;
   height: 22px;
   left: 20%;
@@ -895,16 +880,16 @@ body .main-layout footer .company em {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-body .main-layout footer .company ul {
+footer .company ul {
   position: absolute;
   left: 6%;
   top: calc(50% - 22px / 2 - 73px);
   list-style-type: none;
 }
-body .main-layout footer .company ul li {
+footer .company ul li {
   margin-bottom: 20px;
 }
-body .main-layout footer .company ul li a {
+footer .company ul li a {
   text-decoration: none;
   letter-spacing: 1.76471px;
   color: #FFFFFF;
@@ -914,11 +899,11 @@ body .main-layout footer .company ul li a {
   font-size: 15px;
   line-height: 22px;
 }
-body .main-layout footer .contacts {
+footer .contacts {
   grid-area: contacts;
   position: relative;
 }
-body .main-layout footer .contacts em {
+footer .contacts em {
   position: absolute;
   height: 22px;
   left: 15%;
@@ -932,18 +917,18 @@ body .main-layout footer .contacts em {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-body .main-layout footer .contacts ul {
+footer .contacts ul {
   position: absolute;
   left: 6%;
   top: calc(50% - 22px / 2 - 73px);
   list-style-type: none;
 }
-body .main-layout footer .contacts ul li {
+footer .contacts ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
-body .main-layout footer .contacts ul li a {
+footer .contacts ul li a {
   text-decoration: none;
   letter-spacing: 1.76471px;
   color: #FFFFFF;
@@ -953,24 +938,65 @@ body .main-layout footer .contacts ul li a {
   font-size: 15px;
   line-height: 22px;
 }
-body .main-layout footer .contacts ul li a img {
+footer .contacts ul li a img {
   padding: 10px;
 }
-body .main-layout footer .contacts ul li a.email-address {
+footer .contacts ul li a.email-address {
   font-size: 25px;
 }
-body .main-layout footer .copyright {
+footer .copyright {
   grid-area: copyright;
   position: relative;
   padding: 10px;
 }
-body .main-layout footer .copyright em {
+footer .copyright em {
   padding: 8px;
   position: absolute;
   top: 35%;
   left: 41%;
   right: 41%;
   color: #FFFFFF;
+}
+
+body .main-layout {
+  position: relative;
+  width: min(95%, 1200px);
+  height: 4294px;
+  margin: 0 auto;
+  background: rgba(238, 220, 220, 0.01);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7, 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "header" "banner" "service" "features" "price-plan" "ada" "footer";
+  align-items: start;
+}
+body .main-layout > * {
+  align-self: center;
+}
+body .main-layout .header {
+  grid-area: header;
+}
+body .main-layout .banner {
+  grid-area: banner;
+}
+body .main-layout .service {
+  grid-area: service;
+}
+body .main-layout .features {
+  grid-area: features;
+}
+body .main-layout .price-plan {
+  grid-area: price-plan;
+}
+body .main-layout .ada {
+  grid-area: ada;
+}
+body .main-layout .footer {
+  grid-area: footer;
+}
+body .main-layout * {
+  border: 1px solid #16133E;
 }
 
 /*# sourceMappingURL=style.css.map */

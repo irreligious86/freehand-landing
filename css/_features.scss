@@ -1,0 +1,115 @@
+.features {
+  width: min(1157px, 95%);
+  height: 693px;
+  background: rgba(100, 100, 100, .01);
+  position: relative;
+  .first-features-title {
+    position: absolute;
+    height: 16px;
+    left: 0%;
+    right: 90.67%;
+    top: calc(50% - 16px / 2 - 338.5px);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    color: #87A1B6;
+  }
+
+  .main-features-title {
+    position: absolute;
+    height: 52px;
+    left: 0%;
+    right: 67.76%;
+    top: calc(50% - 52px / 2 - 286.5px);
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    /* identical to box height, or 130% */
+
+    color: #16133E;
+  }
+
+  .features-description {
+    position: absolute;
+    height: 16px;
+    left: 0%;
+    right: 39.93%;
+    top: calc(50% - 16px / 2 - 237.5px);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    /* identical to box height, or 89% */
+
+    color: #5A7184;
+  }
+
+  .img-placeholder-left {
+    position: absolute;
+    left: 0%;
+    right: 52.03%;
+    top: 30.01%;
+    bottom: 0%;
+
+    background: url(../img/features-img-1.png);
+    border-radius: 8px;
+
+    em {
+      display: block;
+      position: absolute;
+      height: 96px;
+      left: 25%;
+      right: 18%;
+      /*top: calc(50% - 96px/2 + 253.5px);*/
+      bottom: 10%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 48px;
+      /* or 133% */
+
+      color: #FFFFFF;
+    }
+  }
+
+  .img-placeholder-right {
+    position: absolute;
+    left: 52.03%;
+    right: 0%;
+    top: 30.01%;
+    bottom: 0%;
+
+    background: url(../img/features-img-2.png);
+    border-radius: 8px;
+
+    em {
+      display: block;
+      position: absolute;
+      height: 96px;
+      left: 25%;
+      right: 18%;
+      /*top: calc(50% - 96px/2 + 253.5px);*/
+      bottom: 10%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 48px;
+      /* or 133% */
+
+      color: #FFFFFF;
+    }
+  }
+
+}

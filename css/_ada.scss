@@ -1,0 +1,80 @@
+.ada {
+  width: min(1152px, 95%);
+  height: 387px;
+  /*background: rgba(100, 100, 100, .3);*/
+  background-image: url("../img/ada-bg.png");
+  position: relative;
+  em.main-ada-title {
+    position: absolute;
+    height: 52px;
+    left: 21.27%;
+    right: 20.83%;
+    top: calc(50% - 52px / 2 - 67.5px);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    /* identical to box height, or 130% */
+
+    color: #FFFFFF;
+  }
+
+  em.ada-description {
+    position: absolute;
+    height: 16px;
+    left: 23.52%;
+    right: 26.91%;
+    top: calc(50% - 16px / 2 - 1.5px);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    /* identical to box height, or 89% */
+
+    color: #FFFFFF;
+  }
+
+  .button-try {
+    position: absolute;
+    left: 32.99%;
+    right: 50.35%;
+    top: 63.57%;
+    bottom: 23.51%;
+    border-radius: 23px;
+    padding: 5px 45px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    color: #16133E;
+  }
+
+  .button-watch-demo {
+    position: absolute;
+    left: 50.87%;
+    right: 32.47%;
+    top: 63.57%;
+    bottom: 23.51%;
+    border: 2px solid #FFFFFF;
+    border-radius: 23px;
+    background-color: #007FFC;
+    padding: 5px 45px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    color: #FFFFFF;
+  }
+}
