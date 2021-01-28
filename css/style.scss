@@ -1,84 +1,42 @@
 
+@import '_colors';
+@import '_fonts';
+@import '_grid';
 
-@import '_var';
-
-@import '_bgcolor-var';
-
-@import '_font-extends';
-
-@import '_mixins';
-
+@import '_main-layout';
 @import '_header';
-
 @import '_banner';
-
 @import '_service';
-
 @import '_features';
-
-@import '_price-plan';
-
-@import '_ada';
-
+@import '_price';
+@import '_free';
 @import '_footer';
 
-body {
-  .main-layout {
-    position: relative;
-    width: $main-layout-width;
-    height: $main-layout-height;
-    margin: 0 auto;
-    background: $main-layout-bgcolor;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: (7, 1fr);
-    gap: 10px 10px;
-    grid-template-areas:
-    "header"
-    "banner"
-    "service"
-    "features"
-    "price-plan"
-    "ada"
-    "footer";
+  .header {
 
-    align-items: start;
-
-    > * {
-      align-self: center;
-    }
-
-    .header {
-      grid-area: header;
-    }
-
-    .banner {
-      grid-area: banner;
-    }
-
-    .service {
-      grid-area: service;
-    }
-
-    .features {
-      grid-area: features;
-    }
-
-    .price-plan {
-      grid-area: price-plan;
-    }
-
-    .ada {
-      grid-area: ada;
-    }
-
-    .footer {
-      grid-area: footer;
-    }
-
-    * {
-      //border: 1px solid #16133E;
-    }
   }
-}
+
+  .banner {
+
+  }
+
+  .service {
+
+  }
+
+  .features {
+
+  }
+
+  .price {
+
+  }
+
+  .free {
+
+  }
+
+  .footer {
+
+  }

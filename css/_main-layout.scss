@@ -1,0 +1,11 @@
+.main-layout {
+  width: 1440px;
+  height: 4294px;
+  margin: 0 auto;
+  background-color: rgba(238, 220, 220, .2);
+  >* {
+    background: rgba(100, 100, 100, .3);
+    margin: auto;
+  }
+
+}
