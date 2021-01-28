@@ -1,23 +1,66 @@
 .header {
-  width: 1159px;
-  height: 86px;
-
-  //background: rgba(100, 100, 100, .01);
-display: grid;
+  @extend %header-size;
+  background-color: $header-bgcolor;
+  display: grid;
 
   .logo {
+    @extend %logo-size;
 
+    .logo-img {
+      margin: 10px;
+    }
   }
 
-  .header-links {
+  .header-link-box {
+
+    .header-link {
+      height: 16px;
+      margin: 0.3rem;
+      margin-top: 20px;
+      color: $header-link-color;
+      @extend %header-link-font;
+    }
 
   }
 
   .login {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
+    .login-btn {
+      border-radius: 8px;
+      width: clamp(100px, 4vw + 4rem, 160px);
+      height: calc(16px + 1.5rem);
+      margin: 10px;
+    }
+
+    .log-in {
+      background: #16133E;
+      border: 2px solid #16133E;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      color: #FFFFFF;
+    }
+
+    .sign-in {
+      border: 2px solid #16133E;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      color: #000000;
+    }
   }
 
   .line {
-
+    border: 1px solid $header-line;
   }
 }

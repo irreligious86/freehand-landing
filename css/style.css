@@ -1,3 +1,11 @@
+.header .header-link-box .header-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(1rem + 1vw);
+  line-height: 16px;
+}
+
 .main-layout {
   display: flex;
   flex-direction: column;
@@ -9,13 +17,17 @@
   display: grid;
   grid-template-areas: "logo header-links header-links login" "line line line line";
   grid-template-rows: auto;
-  grid-template-columns: auto;
+  grid-template-columns: 30% 1fr 1fr 30%;
 }
 .main-layout .header .logo {
   grid-area: logo;
 }
-.main-layout .header .header-links {
+.main-layout .header .header-link-box {
   grid-area: header-links;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .main-layout .header .login {
   grid-area: login;
@@ -144,22 +156,73 @@
   grid-area: copyright;
 }
 
-.main-layout {
-  width: 1440px;
-  height: 4294px;
-  margin: 0 auto;
-  background-color: rgba(238, 220, 220, 0.2);
-}
 .main-layout > * {
-  background: rgba(100, 100, 100, 0.3);
-  margin: auto;
+  border: 1px solid dimgray;
+}
+
+.main-layout {
+  width: min(100%, 1440px);
+  height: 4294px;
 }
 
 .header {
-  width: 1159px;
+  width: min(100%, 1159px);
   height: 86px;
+}
+
+.main-layout {
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: rgba(238, 220, 220, 0.2);
+}
+.header {
+  background-color: rgba(100, 100, 100, 0.01);
   display: grid;
 }
+.header .logo .logo-img {
+  margin: 10px;
+}
+.header .header-link-box .header-link {
+  height: 16px;
+  margin: 0.3rem;
+  margin-top: 20px;
+  color: #000000;
+}
+.header .login {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.header .login .login-btn {
+  border-radius: 8px;
+  width: clamp(100px, 4vw + 4rem, 160px);
+  height: calc(16px + 1.5rem);
+  margin: 10px;
+}
+.header .login .log-in {
+  background: #16133E;
+  border: 2px solid #16133E;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.header .login .sign-in {
+  border: 2px solid #16133E;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+.header .line {
+  border: 1px solid #EFEEF3;
+}
+
 .banner {
   width: 1175px;
   height: 420px;
@@ -183,14 +246,14 @@
 }
 
 .free {
-  width: 1152px;
+  width: min(100%, 1152px);
   height: 387px;
   /*background: rgba(100, 100, 100, .3);*/
   background-image: url("../img/ada-bg.png");
 }
 
 .footer {
-  width: 1440px;
+  width: min(100%, 1440px);
   height: 574px;
   background: #16143D;
 }

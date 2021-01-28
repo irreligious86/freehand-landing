@@ -1,11 +1,10 @@
 .main-layout {
-  width: 1440px;
-  height: 4294px;
+  @extend %main-layout-size;
+  box-sizing: border-box;
   margin: 0 auto;
-  background-color: rgba(238, 220, 220, .2);
+  background-color: $main-layout-bgcolor;
   >* {
-    background: rgba(100, 100, 100, .3);
-    margin: auto;
+    @extend %test-mode;
   }
 
 }

@@ -12,14 +12,18 @@
     "logo header-links header-links login"
     "line line line line";
     grid-template-rows: auto;
-    grid-template-columns: auto;
+    grid-template-columns: 30% 1fr 1fr 30%;
 
     .logo {
       grid-area: logo;
     }
 
-    .header-links {
+    .header-link-box {
       grid-area: header-links;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
 
     .login {
