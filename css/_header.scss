@@ -1,181 +1,88 @@
 header {
-  width: min(1159px, 95%);
-  height: 86px;
-  background: rgba(100, 100, 100, .01);
-  position: relative;
-  .line {
-    position: absolute;
-    left: 0.04%;
-    right: 0.04%;
-    top: 98.84%;
-    bottom: 0%;
-    border: 1px solid #EFEEF3;
-  }
+  width: $header-width;
+  height: $header-height;
+  background: $header-bgcolor;
+  margin: 0 auto;
+  padding: 0 1%;
+  display: grid;
+  grid-template-columns: (20%, 1fr, 1fr, 20%);
+  grid-template-rows: auto;
+  grid-template-areas:
+ "logo menu menu login"
+ "line line line line";
+  gap: 5px 8px;
+  align-content: space-between;
 
+  >* {
+    margin-top: 20px;
+  }
   .logo {
-    position: absolute;
+    grid-area: logo;
     width: 194.71px;
     height: 27.6px;
-    left: 0.75px;
-    top: 8.75px;
   }
 
-  .shape-1 {
-    position: absolute;
-    left: 0.06%;
-    right: 97.65%;
-    top: 10.17%;
-    bottom: 59.09%;
-    /*border: 2px solid #3DB370;*/
+  .header-menu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .blog {
+      @extend %header-menu-links-size;
+      @extend %header-blog-font;
+    }
+
+    .pages {
+      @extend %header-menu-links-size;
+      @extend %header-pages-font;
+    }
+
+    .portfolio {
+      @extend %header-menu-links-size;
+      @extend %header-portfolio-font;
+    }
+
+    .home {
+      @extend %header-menu-links-size;
+      @extend %header-home-font;
+    }
   }
 
-  .shape-2 {
-    position: absolute;
-    left: 22.79%;;
-    right: 83.14%;
-    top: 11.74%;
-    bottom: 57.73%;
-    /*background: #16133D;*/
+  .login {
+    grid-area: login;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .header-login-button {
+      background: $header-login-button-bgcolor;
+      border: 2px solid $header-login-button-border;
+      border-radius: 8px;
+      width: clamp(80px, 5vw + 3rem, 180px);
+      height: 32px;
+      margin: calc(0.3rem + 0.3vw);
+      @extend %header-login-title-font;
+    }
+
+    .header-sign-in-button {
+      border: 2px solid $header-sign-in-button-border;
+      border-radius: 8px;
+      width: clamp(80px, 5vw + 3rem, 180px);
+      height: 32px;
+      margin: calc(0.3rem + 0.3vw);
+      @extend %header-sign-in-title-font;
+    }
   }
 
-  .header-login-button {
-    position: absolute;
-    left: 89.82%;
-    right: 0.69%;
-    top: 0%;
-    bottom: 46.51%;
-  }
+  .header-line {
+    grid-area: line;
+    width: 90%;
+    height: 2px;
+    margin: 0 auto;
+    background: $header-line-bgcolor;
 
-  .header-login-bg {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
 
-    background: #16133E;
-    border: 2px solid #16133E;
-    border-radius: 8px;
-  }
-
-  .header-login-title {
-    position: absolute;
-    height: 16px;
-    left: 31.82%;
-    right: 31.82%;
-    top: calc(50% - 16px / 2);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    /* identical to box height, or 100% */
-
-    color: #FFFFFF;
-  }
-
-  .header-sign-in-button {
-    position: absolute;
-    left: 78.08%;
-    right: 11.56%;
-    top: 0%;
-    bottom: 46.51%;
-  }
-
-  .header-sign-in-bg {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-
-    border: 2px solid #16133E;
-    border-radius: 8px;
-  }
-
-  .header-sign-in-title {
-    position: absolute;
-    height: 16px;
-    left: 29.17%;
-    right: 29.17%;
-    top: calc(50% - 16px / 2);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    /* identical to box height, or 100% */
-
-    color: #000000;
-  }
-
-  .blog {
-    position: absolute;
-    height: 16px;
-    left: 62.9%;
-    right: 34.25%;
-    top: calc(50% - 16px / 2 - 20px);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    /* identical to box height, or 100% */
-
-    color: #000000;
-  }
-
-  .pages {
-    position: absolute;
-    height: 16px;
-    left: 53.67%;
-    right: 42.45%;
-    top: calc(50% - 16px / 2 - 20px);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    /* identical to box height, or 100% */
-
-    color: #000000;
-  }
-
-  .portfolio {
-    position: absolute;
-    height: 16px;
-    left: 43.49%;
-    right: 51.08%;
-    top: calc(50% - 16px / 2 - 21px);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    /* identical to box height, or 100% */
-
-    color: #000000;
-  }
-
-  .home {
-    position: absolute;
-    height: 16px;
-    left: 34.43%;
-    right: 61.86%;
-    top: calc(50% - 16px / 2 - 20px);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    /* identical to box height, or 100% */
-
-    color: #000000;
   }
 }

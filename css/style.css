@@ -1,63 +1,66 @@
-header {
-  width: min(1159px, 95%);
-  height: 86px;
-  background: rgba(100, 100, 100, 0.01);
-  position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap");
+header .login .header-login-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(0.6vw + 0.6rem);
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #FFFFFF;
 }
-header .line {
-  position: absolute;
-  left: 0.04%;
-  right: 0.04%;
-  top: 98.84%;
-  bottom: 0%;
-  border: 1px solid #EFEEF3;
+
+header .login .header-sign-in-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(0.6vw + 0.6rem);
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #000000;
 }
-header .logo {
-  position: absolute;
-  width: 194.71px;
-  height: 27.6px;
-  left: 0.75px;
-  top: 8.75px;
+
+header .header-menu .blog {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #000000;
 }
-header .shape-1 {
-  position: absolute;
-  left: 0.06%;
-  right: 97.65%;
-  top: 10.17%;
-  bottom: 59.09%;
-  /*border: 2px solid #3DB370;*/
+
+header .header-menu .pages {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #000000;
 }
-header .shape-2 {
-  position: absolute;
-  left: 22.79%;
-  right: 83.14%;
-  top: 11.74%;
-  bottom: 57.73%;
-  /*background: #16133D;*/
+
+header .header-menu .portfolio {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #000000;
 }
-header .header-login-button {
-  position: absolute;
-  left: 89.82%;
-  right: 0.69%;
-  top: 0%;
-  bottom: 46.51%;
+
+header .header-menu .home {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #000000;
 }
-header .header-login-bg {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  background: #16133E;
-  border: 2px solid #16133E;
-  border-radius: 8px;
-}
-header .header-login-title {
-  position: absolute;
-  height: 16px;
-  left: 31.82%;
-  right: 31.82%;
-  top: calc(50% - 16px / 2);
+
+.banner .view-projects-in-banner > a > em {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -66,91 +69,378 @@ header .header-login-title {
   /* identical to box height, or 100% */
   color: #FFFFFF;
 }
-header .header-sign-in-button {
-  position: absolute;
-  left: 78.08%;
-  right: 11.56%;
-  top: 0%;
-  bottom: 46.51%;
+
+.banner .learn-more-in-banner > a > em {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #007FFC;
 }
-header .header-sign-in-bg {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
+
+.banner .lorem-ipsum-in-banner {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 36px;
+  /* or 189% */
+  color: #183B56;
+}
+
+.banner .freehand-your-brand {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 68px;
+  /* or 121% */
+  color: #16133E;
+}
+
+.service .first-service-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  text-transform: uppercase;
+  color: #87A1B6;
+}
+
+.service .main-service-title {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height, or 130% */
+  color: #16133E;
+}
+
+.service .service-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  /* identical to box height, or 89% */
+  color: #5A7184;
+}
+
+.service .group-header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 52px;
+  /* identical to box height, or 217% */
+  color: #16133E;
+}
+
+.service .group-end {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 52px;
+  /* identical to box height, or 325% */
+  color: #16133E;
+}
+
+.features .first-features-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #87A1B6;
+}
+
+.features .main-features-title {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height, or 130% */
+  color: #16133E;
+}
+
+.features .features-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  /* identical to box height, or 89% */
+  color: #5A7184;
+}
+
+.features .img-placeholder-left em {
+  bottom: 10%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  /* or 133% */
+  color: #FFFFFF;
+}
+
+.features .img-placeholder-right em {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  /* or 133% */
+  color: #FFFFFF;
+}
+
+.price-plan em.main-prices-title {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height, or 130% */
+  color: #16133E;
+}
+
+.price-plan em.prices-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  /* identical to box height, or 89% */
+  color: #5A7184;
+}
+
+.price-plan .started-plan .plan-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  color: #16133E;
+}
+
+.price-plan .started-plan .plan-cost {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height, or 130% */
+}
+
+.price-plan .started-plan .plan-periodicity {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #87A1B6;
+}
+
+.price-plan .started-plan .plan-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+  color: #87A1B6;
+}
+
+.ada em.main-ada-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height, or 130% */
+  color: #FFFFFF;
+}
+
+.ada em.ada-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  /* identical to box height, or 89% */
+  color: #FFFFFF;
+}
+
+.ada .button-try {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #16133E;
+}
+
+.ada .button-watch-demo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #FFFFFF;
+}
+
+footer .general-info em.general-info-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+  color: #FFFFFF;
+}
+
+footer .services em {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  /* identical to box height, or 129% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+footer .services ul li a {
+  text-decoration: none;
+  letter-spacing: 1.76471px;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+footer .company em {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  /* identical to box height, or 129% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+footer .company ul li a {
+  text-decoration: none;
+  letter-spacing: 1.76471px;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+footer .contacts em {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+footer .contacts ul li a {
+  text-decoration: none;
+  letter-spacing: 1.76471px;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+header .header-menu .home, header .header-menu .portfolio, header .header-menu .pages, header .header-menu .blog {
+  width: clamp(60px, 2.5vw + 2.5em, 90px);
+  height: 16px;
+  text-align: center;
+}
+
+header {
+  width: min(1159px, 95%);
+  height: 86px;
+  background: rgba(100, 100, 100, 0.01);
+  margin: 0 auto;
+  padding: 0 1%;
+  display: grid;
+  grid-template-columns: 20%, 1fr, 1fr, 20%;
+  grid-template-rows: auto;
+  grid-template-areas: "logo menu menu login" "line line line line";
+  gap: 5px 8px;
+  align-content: space-between;
+}
+header > * {
+  margin-top: 20px;
+}
+header .logo {
+  grid-area: logo;
+  width: 194.71px;
+  height: 27.6px;
+}
+header .header-menu {
+  grid-area: menu;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .login {
+  grid-area: login;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .login .header-login-button {
+  background: #16133E;
   border: 2px solid #16133E;
   border-radius: 8px;
+  width: clamp(80px, 5vw + 3rem, 180px);
+  height: 32px;
+  margin: calc(0.3rem + 0.3vw);
 }
-header .header-sign-in-title {
-  position: absolute;
-  height: 16px;
-  left: 29.17%;
-  right: 29.17%;
-  top: calc(50% - 16px / 2);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  /* identical to box height, or 100% */
-  color: #000000;
+header .login .header-sign-in-button {
+  border: 2px solid #16133E;
+  border-radius: 8px;
+  width: clamp(80px, 5vw + 3rem, 180px);
+  height: 32px;
+  margin: calc(0.3rem + 0.3vw);
 }
-header .blog {
-  position: absolute;
-  height: 16px;
-  left: 62.9%;
-  right: 34.25%;
-  top: calc(50% - 16px / 2 - 20px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  /* identical to box height, or 100% */
-  color: #000000;
-}
-header .pages {
-  position: absolute;
-  height: 16px;
-  left: 53.67%;
-  right: 42.45%;
-  top: calc(50% - 16px / 2 - 20px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  /* identical to box height, or 100% */
-  color: #000000;
-}
-header .portfolio {
-  position: absolute;
-  height: 16px;
-  left: 43.49%;
-  right: 51.08%;
-  top: calc(50% - 16px / 2 - 21px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  /* identical to box height, or 100% */
-  color: #000000;
-}
-header .home {
-  position: absolute;
-  height: 16px;
-  left: 34.43%;
-  right: 61.86%;
-  top: calc(50% - 16px / 2 - 20px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  /* identical to box height, or 100% */
-  color: #000000;
+header .header-line {
+  grid-area: line;
+  width: 90%;
+  height: 2px;
+  margin: 0 auto;
+  background: #EFEEF3;
 }
 
 .banner {
@@ -233,13 +523,6 @@ header .home {
   left: 20.71%;
   right: 20.71%;
   top: calc(50% - 16px / 2);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  /* identical to box height, or 100% */
-  color: #FFFFFF;
 }
 .banner .learn-more-in-banner {
   position: absolute;
@@ -265,13 +548,6 @@ header .home {
   left: 23.03%;
   right: 23.03%;
   top: calc(50% - 16px / 2);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  /* identical to box height, or 100% */
-  color: #007FFC;
 }
 .banner .lorem-ipsum-in-banner {
   position: absolute;
@@ -281,13 +557,6 @@ header .home {
   left: 0px;
   /*top: 398px;*/
   top: 220px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 36px;
-  /* or 189% */
-  color: #183B56;
 }
 .banner .freehand-your-brand {
   position: absolute;
@@ -297,13 +566,6 @@ header .home {
   left: 0;
   /*top: 169px;*/
   top: 0;
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 56px;
-  line-height: 68px;
-  /* or 121% */
-  color: #16133E;
 }
 
 .service {
@@ -351,14 +613,6 @@ header .home {
   left: 0%;
   right: 89%;
   top: calc(50% - 16px / 2 - 256.5px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
-  /* identical to box height, or 100% */
-  text-transform: uppercase;
-  color: #87A1B6;
 }
 .service .main-service-title {
   position: absolute;
@@ -366,13 +620,6 @@ header .home {
   left: 0%;
   right: 67.9%;
   top: calc(50% - 52px / 2 - 204.5px);
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 52px;
-  /* identical to box height, or 130% */
-  color: #16133E;
 }
 .service .service-description {
   position: absolute;
@@ -380,13 +627,6 @@ header .home {
   left: 0%;
   right: 40.19%;
   top: calc(50% - 16px / 2 - 155.5px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 16px;
-  /* identical to box height, or 89% */
-  color: #5A7184;
 }
 .service .group-icon {
   width: 46px;
@@ -406,13 +646,6 @@ header .home {
   left: 15.61%;
   right: 131.02%;
   top: calc(20% - 52px / 2 + 64.5px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 52px;
-  /* identical to box height, or 217% */
-  color: #16133E;
 }
 .service .group-content {
   position: absolute;
@@ -424,13 +657,6 @@ header .home {
   right: 45px;
   top: 155px;
   bottom: 108px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 28px;
-  /* or 175% */
-  color: #16133E;
 }
 .service .group-end {
   position: absolute;
@@ -438,13 +664,6 @@ header .home {
   left: 11.04%;
   right: 54.99%;
   top: calc(51% - 52px / 2 + 134.5px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 52px;
-  /* identical to box height, or 325% */
-  color: #16133E;
 }
 
 .features {
@@ -459,13 +678,6 @@ header .home {
   left: 0%;
   right: 90.67%;
   top: calc(50% - 16px / 2 - 338.5px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
-  /* identical to box height, or 100% */
-  color: #87A1B6;
 }
 .features .main-features-title {
   position: absolute;
@@ -473,13 +685,6 @@ header .home {
   left: 0%;
   right: 67.76%;
   top: calc(50% - 52px / 2 - 286.5px);
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 52px;
-  /* identical to box height, or 130% */
-  color: #16133E;
 }
 .features .features-description {
   position: absolute;
@@ -487,13 +692,6 @@ header .home {
   left: 0%;
   right: 39.93%;
   top: calc(50% - 16px / 2 - 237.5px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 16px;
-  /* identical to box height, or 89% */
-  color: #5A7184;
 }
 .features .img-placeholder-left {
   position: absolute;
@@ -511,14 +709,6 @@ header .home {
   left: 25%;
   right: 18%;
   /*top: calc(50% - 96px/2 + 253.5px);*/
-  bottom: 10%;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 48px;
-  /* or 133% */
-  color: #FFFFFF;
 }
 .features .img-placeholder-right {
   position: absolute;
@@ -537,13 +727,6 @@ header .home {
   right: 18%;
   /*top: calc(50% - 96px/2 + 253.5px);*/
   bottom: 10%;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 48px;
-  /* or 133% */
-  color: #FFFFFF;
 }
 
 .price-plan {
@@ -558,13 +741,6 @@ header .home {
   left: 0%;
   right: 27.37%;
   top: calc(50% - 52px / 2 - 279px);
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 52px;
-  /* identical to box height, or 130% */
-  color: #16133E;
 }
 .price-plan em.prices-description {
   position: absolute;
@@ -572,17 +748,9 @@ header .home {
   left: 0%;
   right: 39.04%;
   top: calc(50% - 16px / 2 - 230px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 16px;
-  /* identical to box height, or 89% */
-  color: #5A7184;
 }
 .price-plan .started-plan {
   position: absolute;
-  /*background: #FFFFFF;*/
   background: rgba(100, 100, 100, 0.03);
   box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.03);
   border-radius: 0px 0px 8px 8px;
@@ -594,13 +762,6 @@ header .home {
   left: 34%;
   right: 34%;
   top: 15%;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
-  /* identical to box height, or 133% */
-  color: #16133E;
 }
 .price-plan .started-plan .plan-cost {
   display: block;
@@ -610,12 +771,6 @@ header .home {
   right: 39%;
   top: 32%;
   margin: 0 auto;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  /* identical to box height, or 130% */
   text-align: center;
 }
 .price-plan .started-plan .plan-periodicity {
@@ -626,14 +781,6 @@ header .home {
   right: 40%;
   margin: 0 auto;
   top: 42%;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-  color: #87A1B6;
-  margin: 0 auto;
 }
 .price-plan .started-plan .plan-description {
   display: block;
@@ -643,14 +790,7 @@ header .home {
   right: 85px;
   top: 54%;
   margin: 0 auto;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 28px;
-  /* or 175% */
   text-align: center;
-  color: #87A1B6;
 }
 .price-plan .started-plan .button-get-started {
   position: absolute;
@@ -712,7 +852,6 @@ header .home {
 .ada {
   width: min(1152px, 95%);
   height: 387px;
-  /*background: rgba(100, 100, 100, .3);*/
   background-image: url("../img/ada-bg.png");
   position: relative;
 }
@@ -722,13 +861,6 @@ header .home {
   left: 21.27%;
   right: 20.83%;
   top: calc(50% - 52px / 2 - 67.5px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 52px;
-  /* identical to box height, or 130% */
-  color: #FFFFFF;
 }
 .ada em.ada-description {
   position: absolute;
@@ -736,13 +868,6 @@ header .home {
   left: 23.52%;
   right: 26.91%;
   top: calc(50% - 16px / 2 - 1.5px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 16px;
-  /* identical to box height, or 89% */
-  color: #FFFFFF;
 }
 .ada .button-try {
   position: absolute;
@@ -752,13 +877,6 @@ header .home {
   bottom: 23.51%;
   border-radius: 23px;
   padding: 5px 45px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
-  /* identical to box height, or 100% */
-  color: #16133E;
 }
 .ada .button-watch-demo {
   position: absolute;
@@ -770,13 +888,6 @@ header .home {
   border-radius: 23px;
   background-color: #007FFC;
   padding: 5px 45px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
-  /* identical to box height, or 100% */
-  color: #FFFFFF;
 }
 
 footer {
@@ -807,13 +918,6 @@ footer .general-info em.general-info-description {
   left: 10%;
   right: 10%;
   top: calc(50% - 84px / 2 - 20px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 28px;
-  /* or 175% */
-  color: #FFFFFF;
 }
 footer .general-info .network-links {
   position: absolute;
@@ -832,15 +936,6 @@ footer .services em {
   height: 22px;
   left: 20%;
   top: calc(50% - 22px / 2 - 140px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 22px;
-  /* identical to box height, or 129% */
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #FFFFFF;
 }
 footer .services ul {
   position: absolute;
@@ -851,16 +946,6 @@ footer .services ul {
 footer .services ul li {
   margin-bottom: 20px;
 }
-footer .services ul li a {
-  text-decoration: none;
-  letter-spacing: 1.76471px;
-  color: #FFFFFF;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 22px;
-}
 footer .company {
   grid-area: company;
   position: relative;
@@ -870,15 +955,6 @@ footer .company em {
   height: 22px;
   left: 20%;
   top: calc(50% - 22px / 2 - 140px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 22px;
-  /* identical to box height, or 129% */
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #FFFFFF;
 }
 footer .company ul {
   position: absolute;
@@ -889,16 +965,6 @@ footer .company ul {
 footer .company ul li {
   margin-bottom: 20px;
 }
-footer .company ul li a {
-  text-decoration: none;
-  letter-spacing: 1.76471px;
-  color: #FFFFFF;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 22px;
-}
 footer .contacts {
   grid-area: contacts;
   position: relative;
@@ -908,14 +974,6 @@ footer .contacts em {
   height: 22px;
   left: 15%;
   top: calc(50% - 22px / 2 - 140px);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 22px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #FFFFFF;
 }
 footer .contacts ul {
   position: absolute;
@@ -927,16 +985,6 @@ footer .contacts ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-}
-footer .contacts ul li a {
-  text-decoration: none;
-  letter-spacing: 1.76471px;
-  color: #FFFFFF;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 22px;
 }
 footer .contacts ul li a img {
   padding: 10px;
@@ -963,7 +1011,7 @@ body .main-layout {
   width: min(95%, 1200px);
   height: 4294px;
   margin: 0 auto;
-  background: rgba(238, 220, 220, 0.01);
+  background: rgba(238, 220, 220, 0.2);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 7, 1fr;
@@ -994,9 +1042,6 @@ body .main-layout .ada {
 }
 body .main-layout .footer {
   grid-area: footer;
-}
-body .main-layout * {
-  border: 1px solid #16133E;
 }
 
 /*# sourceMappingURL=style.css.map */

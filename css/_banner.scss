@@ -1,7 +1,7 @@
 .banner {
-  width: min(1175px, 95%);
-  height: 420px;
-  background: rgba(100, 100, 100, .01);
+  width: $banner-width;
+  height: $banner-height;
+  background: $banner-bgcolor;
   position: relative;
   .right-arrow {
     position: absolute;
@@ -10,7 +10,7 @@
     left: 16px;
     top: 16px;
     z-index: 5;
-    background: url(../img/arrow-right.png);
+    background: $right-arrow-bgimg;
     /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
   }
 
@@ -21,7 +21,7 @@
     left: 16px;
     top: 16px;
     z-index: 5;
-    background: url(../img/arrow-left.png);
+    background: $left-arrow-bgimg;
     /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
   }
 
@@ -32,7 +32,7 @@
     left: 1148px;
     top: 192px;
     z-index: 3;
-    background: #16133E;
+    background: $arrow-bgcolor;
     border-radius: 5px;
   }
 
@@ -43,7 +43,7 @@
     left: 568px;
     top: 192px;
     z-index: 3;
-    background: #16133E;
+    background: $arrow-bgcolor;
     border-radius: 5px;
   }
 
@@ -54,7 +54,7 @@
     /*left: 594px;*/
     right: 0;
     top: 0px;
-    background: url(../img/rectangle-x.png);
+    background: $rectangle-x-bgimg;
     border-radius: 8px;
   }
 
@@ -76,7 +76,7 @@
     top: 0px;
     bottom: 0px;
 
-    background: #007FFC;
+    background: $view-projects-in-banner-link-bgcolor;
     border-radius: 8px;
   }
 
@@ -86,15 +86,7 @@
     left: 20.71%;
     right: 20.71%;
     top: calc(50% - 16px / 2);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    /* identical to box height, or 100% */
-
-    color: #FFFFFF;
+    @extend %view-projects-in-banner-font;
   }
 
   .learn-more-in-banner {
@@ -115,7 +107,7 @@
     top: 0px;
     bottom: 0px;
 
-    border: 2px solid #007FFC;
+    border: 2px solid $learn-more-in-banner-link-border;
     border-radius: 8px;
   }
 
@@ -125,15 +117,7 @@
     left: 23.03%;
     right: 23.03%;
     top: calc(50% - 16px / 2);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    /* identical to box height, or 100% */
-
-    color: #007FFC;
+    @extend %learn-more-in-banner-font;
   }
 
   .lorem-ipsum-in-banner {
@@ -144,15 +128,7 @@
     left: 0px;
     /*top: 398px;*/
     top: 220px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 36px;
-    /* or 189% */
-
-    color: #183B56;
+    @extend %lorem-ipsum-in-banner-font;
   }
 
   .freehand-your-brand {
@@ -163,13 +139,6 @@
     left: 0;
     /*top: 169px;*/
     top: 0;
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 68px;
-    /* or 121% */
-
-    color: #16133E;
+    @extend %freehand-your-brand-font;
   }
 }

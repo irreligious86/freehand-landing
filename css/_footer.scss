@@ -1,7 +1,7 @@
 footer {
-  width: min(1440px, 95%);
-  height: 574px;
-  background: #16143D;
+  width: $footer-width;
+  height: $footer-height;
+  background: $footer-bgcolor;
   position: relative;
   display: grid;
   grid-template-columns: 30% 1fr 1fr 30%;
@@ -29,15 +29,7 @@ footer {
       left: 10%;
       right: 10%;
       top: calc(50% - 84px / 2 - 20px);
-
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 28px;
-      /* or 175% */
-
-      color: #FFFFFF;
+      @extend %foo-general-info-description-font;
     }
 
     .network-links {
@@ -60,17 +52,7 @@ footer {
       height: 22px;
       left: 20%;
       top: calc(50% - 22px / 2 - 140px);
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 17px;
-      line-height: 22px;
-      /* identical to box height, or 129% */
-
-      letter-spacing: 2px;
-      text-transform: uppercase;
-
-      color: #FFFFFF;
+      @extend %foo-services-em-font;
     }
 
     ul {
@@ -83,14 +65,7 @@ footer {
         margin-bottom: 20px;
 
         a {
-          text-decoration: none;
-          letter-spacing: 1.76471px;
-          color: #FFFFFF;
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 15px;
-          line-height: 22px;
+          @extend %foo-services-ul-li-a-font;
         }
       }
     }
@@ -105,17 +80,7 @@ footer {
       height: 22px;
       left: 20%;
       top: calc(50% - 22px / 2 - 140px);
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 17px;
-      line-height: 22px;
-      /* identical to box height, or 129% */
-
-      letter-spacing: 2px;
-      text-transform: uppercase;
-
-      color: #FFFFFF;
+@extend %foo-company-em-font;
     }
 
     ul {
@@ -128,14 +93,7 @@ footer {
         margin-bottom: 20px;
 
         a {
-          text-decoration: none;
-          letter-spacing: 1.76471px;
-          color: #FFFFFF;
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 15px;
-          line-height: 22px;
+          @extend %foo-company-ul-li-a-font;
         }
       }
     }
@@ -150,14 +108,7 @@ footer {
       height: 22px;
       left: 15%;
       top: calc(50% - 22px / 2 - 140px);
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 17px;
-      line-height: 22px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #FFFFFF;
+      @extend %foo-contacts-em-font;
     }
 
     ul {
@@ -172,14 +123,7 @@ footer {
         align-items: center;
 
         a {
-          text-decoration: none;
-          letter-spacing: 1.76471px;
-          color: #FFFFFF;
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 15px;
-          line-height: 22px;
+          @extend %foo-contacts-ul-li-a-font;
 
           img {
             padding: 10px;

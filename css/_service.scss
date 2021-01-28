@@ -1,8 +1,9 @@
 .service {
-  width: min(1162px, 95%);
-  height: 529px;
-  background: rgba(100, 100, 100, .01);
+  width: $service-width;
+  height: $service-height;
+  background: $service-bgcolor;
   position: relative;
+
   .service-group-3 {
     position: absolute;
     left: 68.85%;
@@ -10,10 +11,10 @@
     top: 34.22%;
     bottom: 0%;
 
-    border: 1px solid #E5EAF4;
+    border: 1px solid $service-group-border;
     box-sizing: border-box;
     border-radius: 8px;
-    background-color: #eaebef;
+    background-color: $service-group-bgcolor;
   }
 
   .service-group-2 {
@@ -23,10 +24,10 @@
     top: 34.22%;
     bottom: 0%;
 
-    border: 1px solid #E5EAF4;
+    border: 1px solid $service-group-border;
     box-sizing: border-box;
     border-radius: 8px;
-    background-color: #eaebef;
+    background-color: $service-group-bgcolor;
   }
 
   .service-group-1 {
@@ -36,10 +37,10 @@
     top: 34.22%;
     bottom: 0%;
 
-    border: 1px solid #E5EAF4;
+    border: 1px solid $service-group-border;
     box-sizing: border-box;
     border-radius: 8px;
-    background-color: #eaebef;
+    background-color: $service-group-bgcolor;
   }
 
   .first-service-title {
@@ -48,16 +49,7 @@
     left: 0%;
     right: 89%;
     top: calc(50% - 16px / 2 - 256.5px);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 16px;
-    /* identical to box height, or 100% */
-    text-transform: uppercase;
-
-    color: #87A1B6;
+    @extend %first-service-title-font;
   }
 
   .main-service-title {
@@ -66,15 +58,7 @@
     left: 0%;
     right: 67.9%;
     top: calc(50% - 52px / 2 - 204.5px);
-
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 52px;
-    /* identical to box height, or 130% */
-
-    color: #16133E;
+    @extend %main-service-title-font;
   }
 
   .service-description {
@@ -83,15 +67,7 @@
     left: 0%;
     right: 40.19%;
     top: calc(50% - 16px / 2 - 155.5px);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 16px;
-    /* identical to box height, or 89% */
-
-    color: #5A7184;
+    @extend %service-description-font;
   }
 
   .group-icon {
@@ -103,7 +79,7 @@
     left: 50px;
     margin: 5px;
     padding: 5px 10px;
-    border: 2px solid grey;
+    border: 2px solid $group-icon-border;
     border-radius: 8px;
   }
 
@@ -113,15 +89,7 @@
     left: 15.61%;
     right: 131.02%;
     top: calc(20% - 52px / 2 + 64.5px);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 52px;
-    /* identical to box height, or 217% */
-
-    color: #16133E;
+    @extend %service-group-header-font;
   }
 
   .group-content {
@@ -135,14 +103,6 @@
     top: 155px;
     bottom: 108px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 28px;
-    /* or 175% */
-
-    color: #16133E;
   }
 
   .group-end {
@@ -151,14 +111,6 @@
     left: 11.04%;
     right: 54.99%;
     top: calc(51% - 52px / 2 + 134.5px);
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 52px;
-    /* identical to box height, or 325% */
-
-    color: #16133E;
+    @extend %service-group-end-font;
   }
 }
