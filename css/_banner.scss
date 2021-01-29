@@ -1,6 +1,108 @@
 .banner {
-  width: 1175px;
-  height: 420px;
+  @extend %banner-size;
+  background-color: $banner-bgcolor;
+  * {
+    box-sizing: border-box;
+    //@extend %test-mode;
+  }
 
-  //background: rgba(100, 100, 100, .01);
+  .section-title {
+    @extend %left-right-padd;
+    width: max(100%, 150px);
+
+    h2 {
+
+    }
+  }
+
+  .section-description {
+    @extend %left-right-padd;
+    width: max(100%, 150px);
+
+    p {
+
+    }
+  }
+
+  .slider-wrapper {
+    @extend %slider-size;
+    position: relative;
+
+    .slider {
+      background: $slider-bgcolor;
+      border-radius: 8px;
+    }
+
+    .control {
+      width: 22px;
+      height: 22px;
+      padding: 15px;
+      border: 1px solid silver;
+      border-radius: 8px;
+      position: absolute;
+      z-index: 5;
+      background-color: $slider-control-bgcolor;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &.prev-img {
+        top: 174px;
+        left: -10px;
+        background-image: url("../img/arrow-left.png");
+      }
+
+      &.next-img {
+        top: 174px;
+        right: -10px;
+        background-image: url("../img/arrow-right.png");
+      }
+    }
+  }
+
+  .button-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: calc(3px + 0.2rem + 1vw);
+    width: max(100%, 150px);
+    height: max(62px, 100%);
+    @extend %left-right-padd;
+
+    .view-projects {
+      width: 152px;
+      height: 46px;
+
+      background: #007FFC;
+      border-radius: 8px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      /* identical to box height, or 100% */
+
+      color: #FFFFFF;
+
+
+    }
+
+    .learn-more {
+      width: 152px;
+      height: 46px;
+
+      border: 2px solid #007FFC;
+      border-radius: 8px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      /* identical to box height, or 100% */
+
+      color: #007FFC;
+    }
+  }
 }
