@@ -38,7 +38,7 @@
 .main-layout .banner {
   display: grid;
   grid-template-areas: "section-title slider-wrapper" "section-description slider-wrapper" "button-box slider-wrapper";
-  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
 .main-layout .banner .section-title {
@@ -166,8 +166,23 @@
 }
 
 .header {
-  width: min(100%, 1159px);
+  width: min(100%, 1160px);
   height: 86px;
+}
+
+.banner {
+  width: min(100%, 1160px);
+  height: 420px;
+}
+
+.banner .slider-wrapper {
+  width: 580px;
+  height: 420px;
+}
+
+.banner .button-box, .banner .section-description, .banner .section-title {
+  padding-left: calc(.3em + 0.3rem + 1vw);
+  padding-right: calc(.3em + 0.3rem + 1vw);
 }
 
 .main-layout {
@@ -224,8 +239,80 @@
 }
 
 .banner {
-  width: 1175px;
-  height: 420px;
+  background-color: rgba(100, 100, 100, 0.1);
+}
+.banner * {
+  box-sizing: border-box;
+}
+.banner .section-title {
+  width: max(100%, 150px);
+}
+.banner .section-description {
+  width: max(100%, 150px);
+}
+.banner .slider-wrapper {
+  position: relative;
+}
+.banner .slider-wrapper .slider {
+  background: gray;
+  border-radius: 8px;
+}
+.banner .slider-wrapper .control {
+  width: 22px;
+  height: 22px;
+  padding: 15px;
+  border: 1px solid silver;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 5;
+  background-color: #16133E;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner .slider-wrapper .control.prev-img {
+  top: 174px;
+  left: -10px;
+  background-image: url("../img/arrow-left.png");
+}
+.banner .slider-wrapper .control.next-img {
+  top: 174px;
+  right: -10px;
+  background-image: url("../img/arrow-right.png");
+}
+.banner .button-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: calc(3px + 0.2rem + 1vw);
+  width: max(100%, 150px);
+  height: max(62px, 100%);
+}
+.banner .button-box .view-projects {
+  width: 152px;
+  height: 46px;
+  background: #007FFC;
+  border-radius: 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #FFFFFF;
+}
+.banner .button-box .learn-more {
+  width: 152px;
+  height: 46px;
+  border: 2px solid #007FFC;
+  border-radius: 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #007FFC;
 }
 
 .service {

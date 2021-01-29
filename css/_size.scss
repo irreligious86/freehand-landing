@@ -1,4 +1,6 @@
 
+$selector-width: min(100%, 1160px);
+
 %test-mode {
   border: 1px solid dimgray;
 }
@@ -9,11 +11,29 @@
 }
 
 %header-size {
-  width: min(100%, 1159px);
+  width: $selector-width;
   height: 86px;
 }
 
 %logo-size {
   //width: 194.71px;
   //height: 27.6px;
+}
+
+%banner-size {
+  width: $selector-width;
+  height: 420px;
+}
+
+$slider-width: 580px;
+$slider-height: 420px;
+
+%slider-size {
+  width: $slider-width;
+  height: $slider-height;
+}
+
+%left-right-padd {
+  padding-left: calc(.3em + 0.3rem + 1vw);
+  padding-right: calc(.3em + 0.3rem + 1vw);
 }
