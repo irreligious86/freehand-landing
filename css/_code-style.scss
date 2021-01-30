@@ -1,0 +1,30 @@
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  .pre-section-title {
+    padding: 8px;
+    @extend %pre-section-title-font;
+    color: $pre-section-title-color;
+  }
+
+  .section-title {
+    @extend %side-padd-size;
+    > * {
+      @extend %section-title-font;
+      color: $section-title-color;
+      margin: 0;
+    }
+  }
+
+  .section-description {
+    @extend %side-padd-size;
+    > * {
+      @extend %section-description-font;
+      color: $section-description-color;
+      margin: 0;
+    }
+  }
+}

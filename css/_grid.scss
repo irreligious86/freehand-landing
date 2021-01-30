@@ -1,3 +1,34 @@
+//HEADER, FOOTER, SECTIONS BETWEEN THEM, AND THEIR DIRECT CHILDREN ONLY
+//
+//      flex          grid
+//      ---------|--------------
+//                    |---child
+//      HEADER  ------|---child
+//         |          |---child
+//         |
+//         |          |---child
+//      SECTION ------|---child
+//         |          |---child
+//         |
+//         |          |---child
+//      SECTION ------|---child
+//         |          |---child
+//         |
+//         |          |---child
+//      SECTION ------|---child
+//         |          |---child
+//         |
+//         |          |---child
+//      SECTION ------|---child
+//         |          |---child
+//         |
+//         |          |---child
+//      SECTION ------|---child
+//         |          |---child
+//         |
+//         |          |---child
+//      FOOTER  ------|---child
+//                    |---child
 
 .main-layout {
   display: flex;
@@ -16,18 +47,26 @@
 
     .logo {
       grid-area: logo;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
     }
 
     .header-link-box {
       grid-area: header-links;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: space-evenly;
     }
 
     .login {
       grid-area: login;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
     }
 
     .line {
@@ -41,7 +80,7 @@
     "section-title slider-wrapper"
     "section-description slider-wrapper"
     "button-box slider-wrapper";
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
 
     .section-title {
@@ -58,6 +97,10 @@
 
     .button-box {
       grid-area: button-box;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
     }
   }
 
@@ -70,6 +113,7 @@
     "content-group-1 content-group-2 content-group-3";
     grid-template-rows: 1fr 1fr 1fr 3fr;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
 
     .pre-section-title {
       grid-area: pre-section-title;
@@ -93,6 +137,14 @@
 
     .content-group-3 {
       grid-area: content-group-3;
+    }
+
+    .content-group {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
     }
   }
 
