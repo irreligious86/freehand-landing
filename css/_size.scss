@@ -1,8 +1,13 @@
 
-$selector-width: min(100%, 1160px);
-
 %test-mode {
   border: 1px solid dimgray;
+}
+
+$selector-width: clamp(640px, 100%, 1160px);
+
+%side-padd-size {
+  padding-left: calc(.3em + 0.3rem + 1vw);
+  padding-right: calc(.3em + 0.3rem + 1vw);
 }
 
 %main-layout-size {
@@ -15,9 +20,9 @@ $selector-width: min(100%, 1160px);
   height: 86px;
 }
 
-%logo-size {
-  //width: 194.71px;
-  //height: 27.6px;
+%header-login-btn {
+  width: clamp(100px, 4vw + 4rem, 160px);
+  height: calc(16px + 1.5rem);
 }
 
 %banner-size {
@@ -25,15 +30,36 @@ $selector-width: min(100%, 1160px);
   height: 420px;
 }
 
-$slider-width: 580px;
-$slider-height: 420px;
 
 %slider-size {
+  $slider-width: 580px;
+  $slider-height: 420px;
   width: $slider-width;
   height: $slider-height;
 }
 
-%left-right-padd {
-  padding-left: calc(.3em + 0.3rem + 1vw);
-  padding-right: calc(.3em + 0.3rem + 1vw);
+%banner-title-size {
+  width: max(100%, 150px);
+  //height: min(124px, 100%);
+}
+
+%banner-descript-size {
+  width: max(100%, 150px);
+  //height: clamp(62px, 50px + 4rem + 5vw, 100px);
+}
+
+%banner-button-box-size {
+  gap: calc(3px + 0.2rem + 1vw);
+  width: max(100%, 150px);
+  height: max(62px, 100%);
+}
+
+%banner-button-size {
+  width: clamp(100px,  5rem + 6vw, 152px);
+  height: clamp(30px,  20px + 3vw, 46px);
+}
+
+%service-size {
+  width: $selector-width;
+  height: 529px;
 }

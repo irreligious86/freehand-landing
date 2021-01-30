@@ -1,13 +1,12 @@
 .header {
   @extend %header-size;
   background-color: $header-bgcolor;
-  display: grid;
 
   .logo {
-    @extend %logo-size;
 
     .logo-img {
       margin: 10px;
+      height: 30px;
     }
   }
 
@@ -24,39 +23,24 @@
   }
 
   .login {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 
     .login-btn {
       border-radius: 8px;
-      width: clamp(100px, 4vw + 4rem, 160px);
-      height: calc(16px + 1.5rem);
       margin: 10px;
-    }
+      @extend %header-login-btn;
 
-    .log-in {
-      background: #16133E;
-      border: 2px solid #16133E;
+      &.log-in {
+        background: $header-log-in-bgcolor;
+        border: 2px solid $header-log-in-border;
+        @extend %header-login-btn-font;
+        color: $header-log-in-color;
+      }
 
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 16px;
-      color: #FFFFFF;
-    }
-
-    .sign-in {
-      border: 2px solid #16133E;
-
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 16px;
-      color: #000000;
+      &.sign-in {
+        border: 2px solid $header-sign-in-border;
+        @extend %header-login-btn-font;
+        color: $header-sign-in-color;
+      }
     }
   }
 

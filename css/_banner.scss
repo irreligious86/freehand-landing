@@ -1,27 +1,9 @@
 .banner {
   @extend %banner-size;
   background-color: $banner-bgcolor;
-  * {
-    box-sizing: border-box;
-    //@extend %test-mode;
-  }
 
   .section-title {
-    @extend %left-right-padd;
-    width: max(100%, 150px);
-
-    h2 {
-
-    }
-  }
-
-  .section-description {
-    @extend %left-right-padd;
-    width: max(100%, 150px);
-
-    p {
-
-    }
+    @extend %banner-title-size;
   }
 
   .slider-wrapper {
@@ -37,7 +19,7 @@
       width: 22px;
       height: 22px;
       padding: 15px;
-      border: 1px solid silver;
+      border: 1px solid $slider-control-border;
       border-radius: 8px;
       position: absolute;
       z-index: 5;
@@ -60,49 +42,26 @@
   }
 
   .button-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: calc(3px + 0.2rem + 1vw);
-    width: max(100%, 150px);
-    height: max(62px, 100%);
-    @extend %left-right-padd;
+    @extend %side-padd-size;
+    @extend %banner-button-box-size;
 
     .view-projects {
-      width: 152px;
-      height: 46px;
-
-      background: #007FFC;
+      @extend %banner-button-size;
+      @extend %banner-button-font;
+      background: $banner-view-projects-bgcolor;
       border-radius: 8px;
-
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 16px;
-      /* identical to box height, or 100% */
-
-      color: #FFFFFF;
+      color: $banner-view-projects-color;
 
 
     }
 
     .learn-more {
-      width: 152px;
-      height: 46px;
-
-      border: 2px solid #007FFC;
+      @extend %banner-button-size;
+      @extend %banner-button-font;
+      border: 2px solid $banner-learn-more-border;
       border-radius: 8px;
-
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 16px;
-      /* identical to box height, or 100% */
-
-      color: #007FFC;
+      color: $banner-learn-more-color;
     }
   }
 }
+
