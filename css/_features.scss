@@ -1,7 +1,36 @@
 .features {
-  @extend %test-mode;
-  width: 1157px;
+  width: $selector-width;
   height: 693px;
+  background: rgba(100, 100, 100, .01);
+  .img-placeholder {
+    width: clamp(600px, 100%, 1200px);
+    .card {
+      position: relative;
+      border-radius: 8px;
 
-  //background: rgba(100, 100, 100, .01);
+      .features-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .comment-img {
+        display: block;
+        position: absolute;
+        left: 15%;
+        right: 15%;
+        bottom: 10%;
+        top: 70%;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: clamp(18px,  3vw, 36px);
+        line-height: clamp(24px,  4.5vw, 48px);
+
+        color: #FFFFFF;
+      }
+    }
+  }
+
 }

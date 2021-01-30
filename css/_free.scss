@@ -1,8 +1,47 @@
 .free {
+  @extend %test-mode;
   width: min(100%, 1152px);
   height: 387px;
-
-
-  /*background: rgba(100, 100, 100, .3);*/
   background-image: url("../img/ada-bg.png");
+  padding: clamp(20px,  calc((100% - 400px) / 2) , 60px);
+
+  .section-title > * {
+    color: #FFFFFF;
+  }
+
+  .section-description > * {
+    color: #FFFFFF;
+  }
+
+  button {
+    margin: 0 max(10px, 2vw);
+  }
+
+  .button-try {
+    border-radius: 23px;
+    padding: 5px 45px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #16133E;
+  }
+
+  .button-watch-demo {
+    border: 2px solid #FFFFFF;
+    border-radius: 23px;
+    background-color: #007FFC;
+    padding: 5px 45px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+  }
 }
