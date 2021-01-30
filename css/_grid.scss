@@ -209,12 +209,20 @@
     display: grid;
     grid-template-areas:
     "general-info services company contacts"
-    ". copyright copyright .";
-    grid-template-rows: 4fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    "copyright copyright copyright copyright";
+    grid-template-rows: 1fr 15%;
+    //grid-template-columns: 36vw 1fr 1fr 22vw;
+    grid-template-columns: auto;
+    gap: 3px 3px;
 
     .general-info {
       grid-area: general-info;
+      .network-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2.3vw;
+      }
     }
 
     .services {
