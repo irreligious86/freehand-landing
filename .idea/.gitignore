@@ -3,3 +3,11 @@
 /workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+
+projects/
+node_modules/
+freehand-landing-page-figmango/
+.cache/
+.idea/
+dist/
+*.json
