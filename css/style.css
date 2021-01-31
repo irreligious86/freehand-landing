@@ -1,5 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+section .pre-section-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+section .section-title > * {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+section .section-description > * {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+}
+
 .header .header-link-box .header-link {
   font-family: Roboto;
   font-style: normal;
@@ -24,29 +49,117 @@
   line-height: 16px;
 }
 
-section .pre-section-title {
+.service .content-group .group-header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 52px;
+}
+
+.service .content-group .group-content {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.service .content-group .learn-more {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 52px;
+}
+
+.features .img-placeholder .card .comment-img {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(18px, 3vw, 36px);
+  line-height: clamp(24px, 4.5vw, 48px);
+}
+
+.price .started-plan .plan-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.price .started-plan .plan-cost {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.price .started-plan .plan-periodicity {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.price .started-plan .plan-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.free .button-try {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
-  text-transform: uppercase;
 }
 
-section .section-title > * {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 52px;
-}
-
-section .section-description > * {
+.free .button-watch-demo {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 16px;
+}
+
+.footer a {
+  text-decoration: none;
+  letter-spacing: 1.76471px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(10px, 1.5vw, 15px);
+  line-height: 22px;
+}
+.footer a.email-address {
+  font-size: clamp(10px, 2.1vw, 25px);
+}
+
+.footer .general-info .general-info-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.footer .contacts em, .footer .company em, .footer .services em {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .main-layout {
@@ -218,10 +331,6 @@ section .section-description > * {
   grid-area: copyright;
 }
 
-.free {
-  border: 1px solid dimgray;
-}
-
 .banner .button-box, section .section-description, section .section-title {
   padding-left: calc(.3em + 0.3rem + 1vw);
   padding-right: calc(.3em + 0.3rem + 1vw);
@@ -270,6 +379,50 @@ section .section-description > * {
 .service {
   width: clamp(640px, 100%, 1160px);
   height: 529px;
+}
+
+.service .content-group .group-icon {
+  width: 46px;
+  height: 42px;
+}
+
+.features {
+  width: clamp(640px, 100%, 1160px);
+  height: 693px;
+}
+
+.features .img-placeholder {
+  width: clamp(600px, 100%, 1200px);
+}
+
+.price {
+  width: min(1140px, 100%);
+  height: 610px;
+}
+
+.price .started-plan {
+  width: clamp(200px, calc(100% - 4vw / 3 * 10px), 362px);
+  height: min(436px, 280px + 8vw);
+}
+
+.price .started-plan .thick-line {
+  width: 100%;
+  height: calc(1vw / 3);
+}
+
+.price .started-plan .button-get-started {
+  width: min(181px, 2rem + 16vw);
+  height: min(50px, 1rem + 2vw);
+}
+
+.free {
+  width: min(100%, 1152px);
+  height: 387px;
+}
+
+.footer {
+  width: min(100%, 1440px);
+  height: 574px;
 }
 
 * {
@@ -373,14 +526,11 @@ section .section-description > * {
 }
 .service .content-group {
   border: 1px solid #143f98;
-  box-sizing: border-box;
   border-radius: 8px;
   background-color: #eaebef;
   padding: clamp(12px, 2.5vw, 40px);
 }
 .service .content-group .group-icon {
-  width: 46px;
-  height: 42px;
   display: block;
   margin-bottom: 10px;
   padding: 8px;
@@ -388,37 +538,17 @@ section .section-description > * {
   border-radius: 8px;
 }
 .service .content-group .group-header {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 52px;
   color: #16133E;
 }
 .service .content-group .group-content {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 28px;
   color: #16133E;
 }
 .service .content-group .learn-more {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 52px;
   color: #16133E;
 }
 
 .features {
-  width: clamp(640px, 100%, 1160px);
-  height: 693px;
   background: rgba(100, 100, 100, 0.01);
-}
-.features .img-placeholder {
-  width: clamp(600px, 100%, 1200px);
 }
 .features .img-placeholder .card {
   position: relative;
@@ -436,75 +566,37 @@ section .section-description > * {
   right: 15%;
   bottom: 10%;
   top: 70%;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: clamp(18px, 3vw, 36px);
-  line-height: clamp(24px, 4.5vw, 48px);
   color: #FFFFFF;
 }
 
 .price {
-  width: min(1140px, 100%);
-  height: 610px;
   background: rgba(100, 100, 100, 0.01);
 }
 .price .started-plan {
-  background: #FFFFFF;
   background: rgba(100, 100, 100, 0.3);
   box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.03);
   border-radius: 0px 0px 8px 8px;
   padding-top: 0;
   padding-bottom: 40px;
-  width: clamp(200px, calc(100% - 4vw / 3 * 10px), 362px);
-  height: min(436px, 280px + 8vw);
 }
 .price .started-plan .thick-line {
-  width: 100%;
-  height: calc(1vw / 3);
   margin: 0;
 }
 .price .started-plan .plan-name {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
   color: #16133E;
 }
-.price .started-plan .plan-cost {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-}
 .price .started-plan .plan-periodicity {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
   color: #87A1B6;
 }
 .price .started-plan .plan-description {
   display: block;
   width: 70%;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
   color: #87A1B6;
 }
 .price .started-plan .button-get-started {
   border-radius: 25px;
   border: 2px solid black;
   background: lightyellow;
-  width: min(181px, 2rem + 16vw);
-  height: min(50px, 1rem + 2vw);
 }
 .price .started-plan.started-plan-first .thick-line {
   background: #0593FA;
@@ -526,8 +618,6 @@ section .section-description > * {
 }
 
 .free {
-  width: min(100%, 1152px);
-  height: 387px;
   background-image: url("../img/ada-bg.png");
   padding: clamp(20px, calc((100% - 400px) / 2) , 60px);
 }
@@ -543,11 +633,6 @@ section .section-description > * {
 .free .button-try {
   border-radius: 23px;
   padding: 5px 45px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
   color: #16133E;
 }
 .free .button-watch-demo {
@@ -555,17 +640,10 @@ section .section-description > * {
   border-radius: 23px;
   background-color: #007FFC;
   padding: 5px 45px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
   color: #FFFFFF;
 }
 
 .footer {
-  width: min(100%, 1440px);
-  height: 574px;
   padding-top: max(15px, 3vw);
   background: #16143D;
 }
@@ -580,59 +658,23 @@ section .section-description > * {
   margin-bottom: 20px;
 }
 .footer a {
-  text-decoration: none;
-  letter-spacing: 1.76471px;
   color: #FFFFFF;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: clamp(10px, 1.5vw, 15px);
-  line-height: 22px;
-}
-.footer a.email-address {
-  font-size: clamp(10px, 2.1vw, 25px);
 }
 .footer .general-info .general-info-description {
   display: block;
   padding: 2vw;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 28px;
   color: #FFFFFF;
 }
 .footer .services em {
   height: 22px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 22px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   color: #FFFFFF;
 }
 .footer .company em {
   height: 22px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 22px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   color: #FFFFFF;
 }
 .footer .contacts em {
   height: 22px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 22px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   color: #FFFFFF;
 }
 .footer .copyright {

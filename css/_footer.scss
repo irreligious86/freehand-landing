@@ -1,31 +1,24 @@
 .footer {
-  width: min(100%, 1440px);
-  height: 574px;
-  padding-top: max(15px, 3vw);
-  background: #16143D;
+  @extend %footer-size;
+  padding-top: $footer-padding-top;
+  background: $footer-bgcolor;
 
   > * {
-    padding: clamp(5px,  2vw, 15px);
+    padding: $footer-child-padding;
   }
+
   ul {
     list-style-type: none;
     padding-inline-start: 5px;
   }
+
   li {
     margin-bottom: 20px;
   }
+
   a {
-    text-decoration: none;
-    letter-spacing: 1.76471px;
-    color: #FFFFFF;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: clamp(10px, 1.5vw, 15px);
-    line-height: 22px;
-    &.email-address {
-      font-size: clamp(10px,  2.1vw, 25px);
-    }
+    @extend %footer-link-font;
+    color: $footer-link-color;
   }
 
   .general-info {
@@ -33,74 +26,41 @@
     .general-info-description {
       display: block;
       padding: 2vw;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 28px;
-      color: #FFFFFF;
-    }
-
-    .network-links {
-      //margin: 10px;
+      @extend %footer-general-info-description-font;
+      color: $footer-general-info-description-color;
     }
   }
 
   .services {
     em {
       height: 22px;
-
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 17px;
-      line-height: 22px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-
-      color: #FFFFFF;
+      @extend %footer-child-em-font;
+      color: $footer-services-em-color;
     }
   }
 
   .company {
     em {
       height: 22px;
-
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 17px;
-      line-height: 22px;
-
-      letter-spacing: 2px;
-      text-transform: uppercase;
-
-      color: #FFFFFF;
+      @extend %footer-child-em-font;
+      color: $footer-company-em-color;
     }
   }
 
   .contacts {
     em {
       height: 22px;
-
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 17px;
-      line-height: 22px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #FFFFFF;
+      @extend %footer-child-em-font;
+      color: $footer-contacts-em-color;
     }
   }
 
   .copyright {
     text-align: center;
     padding: 8px;
-    em.copyright-text {
-      color: #FFFFFF;
 
+    em.copyright-text {
+      color: $footer-copyright-em-color;
     }
   }
-
 }

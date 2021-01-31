@@ -63,3 +63,54 @@ $selector-width: clamp(640px, 100%, 1160px);
   width: $selector-width;
   height: 529px;
 }
+
+$service-content-group-padding: clamp(12px, 2.5vw, 40px);
+
+%service-content-group-icon-size {
+  width: 46px;
+  height: 42px;
+}
+
+%features-size {
+  width: $selector-width;
+  height: 693px;
+}
+
+%features-img-placeholder-size {
+  width: clamp(600px, 100%, 1200px);
+}
+
+%price-size {
+  width: min(1140px, 100%);
+  height: 610px;
+}
+
+%price-started-plan-size {
+  width: clamp(200px, calc(100% - 4vw / 3 * 10px), 362px);
+  height: min(436px, 280px + 8vw);
+}
+
+%price-started-plan-thick-line-size {
+  width: 100%;
+  height: calc(1vw / 3);
+}
+
+%price-button-get-started-size {
+  width: min(181px, 2rem + 16vw);
+  height: min(50px, 1rem + 2vw);
+}
+
+%free-size {
+  width: min(100%, 1152px);
+  height: 387px;
+}
+
+$free-padding: clamp(20px,  calc((100% - 400px) / 2) , 60px);
+
+%footer-size {
+  width: min(100%, 1440px);
+  height: 574px;
+}
+
+$footer-padding-top: max(15px, 3vw);
+$footer-child-padding: clamp(5px, 2vw, 15px);

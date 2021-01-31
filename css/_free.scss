@@ -1,16 +1,14 @@
 .free {
-  @extend %test-mode;
-  width: min(100%, 1152px);
-  height: 387px;
+  @extend %free-size;
   background-image: url("../img/ada-bg.png");
-  padding: clamp(20px,  calc((100% - 400px) / 2) , 60px);
+  padding: $free-padding;
 
   .section-title > * {
-    color: #FFFFFF;
+    color: $free-section-title-color;
   }
 
   .section-description > * {
-    color: #FFFFFF;
+    color: $free-section-description-color;
   }
 
   button {
@@ -20,28 +18,16 @@
   .button-try {
     border-radius: 23px;
     padding: 5px 45px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 16px;
-
-    color: #16133E;
+    @extend %free-button-try-font;
+    color: $free-button-try-color;
   }
 
   .button-watch-demo {
-    border: 2px solid #FFFFFF;
+    border: 2px solid $free-button-watch-demo-color;
     border-radius: 23px;
-    background-color: #007FFC;
+    background-color: $free-button-watch-demo-bgcolor;
     padding: 5px 45px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 16px;
-
-    color: #FFFFFF;
+    @extend %free-button-watch-demo-font;
+    color: $free-button-watch-demo-color;
   }
 }

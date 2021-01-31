@@ -1,102 +1,80 @@
 .price {
-  width: min(1140px, 100%);
-  height: 610px;
-  background: rgba(100, 100, 100, .01);
+  @extend %price-size;
+  background: $price-bgcolor;
 
   .started-plan {
-    background: #FFFFFF;
-    background: rgba(100, 100, 100, .3);
-    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.03);
+    background: $price-started-plan-bgcolor;
+    box-shadow: $price-started-plan-shadow;
     border-radius: 0px 0px 8px 8px;
     padding-top: 0;
     padding-bottom: 40px;
-    width: clamp(200px,  calc(100% - 4vw / 3 * 10px), 362px);
-    height: min(436px, 280px + 8vw);
+    @extend %price-started-plan-size;
 
     .thick-line {
-      width: 100%;
-      height: calc(1vw / 3);
+      @extend %price-started-plan-thick-line-size;
       margin: 0;
     }
 
     .plan-name {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 32px;
-      color: #16133E;
+      @extend %price-plan-name-font;
+      color: $price-plane-name-color;
     }
 
     .plan-cost {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 40px;
-      line-height: 52px;
-      text-align: center;
-
+      @extend %price-plan-cost-font;
     }
 
     .plan-periodicity {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
-      color: #87A1B6;
+      @extend %price-plan-periodicity-font;
+      color: $price-plan-periodicity-color;
     }
 
     .plan-description {
       display: block;
       width: 70%;
-
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 28px;
-      text-align: center;
-      color: #87A1B6;
+      @extend %price-plan-description-font;
+      color: $price-plan-description-color;
     }
 
     .button-get-started {
       border-radius: 25px;
       //padding: 8px 20px;
       //margin: 0 auto;
-      border: 2px solid black;
-      background: lightyellow;
-      width: min(181px, 2rem + 16vw);
-      height: min(50px, 1rem + 2vw);
+      border: 2px solid $price-button-get-started-border;
+      background: $price-button-get-started-bgcolor;
+      @extend %price-button-get-started-size;
     }
 
     &.started-plan-first {
 
       .thick-line {
-        background: #0593FA;
+        background: $price-started-plan-first-thick-line-bgcolor;
       }
+
       .plan-cost {
-        color: #0593FA;
+        color: $price-started-plan-first-plan-cost-color;
       }
     }
 
     &.started-plan-second {
 
       .thick-line {
-        background: #56CBAE;
+        background: $price-started-plan-second-thick-line-bgcolor;
       }
+
       .plan-cost {
-        color: #56CBAE;
+        color: $price-started-plan-second-plan-cost-color;
       }
     }
 
     &.started-plan-third {
 
       .thick-line {
-        background: #FA6770;
+        background: $price-started-plan-third-thick-line-bgcolor;
       }
+
       .plan-cost {
-        color: #FA6770;
+        color: $price-started-plan-third-plan-cost-color;
       }
     }
   }
