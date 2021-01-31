@@ -5,46 +5,32 @@
 
   .content-group {
     border: 1px solid $service-content-group-border;
-    box-sizing: border-box;
     border-radius: 8px;
     background-color: $service-content-group-bgcolor;
-    padding: clamp(12px, 2.5vw, 40px);
+    padding: $service-content-group-padding;
 
     .group-icon {
-      width: 46px;
-      height: 42px;
+      @extend %service-content-group-icon-size;
       display: block;
       margin-bottom: 10px;
       padding: 8px;
-      border: 2px solid grey;
+      border: 2px solid $service-group-icon-border;
       border-radius: 8px;
     }
 
     .group-header {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 52px;
-      color: #16133E;
+      @extend %service-group-header-font;
+      color: $service-group-header-color;
     }
 
     .group-content {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 28px;
-      color: #16133E;
+      @extend %service-group-content-font;
+      color: $service-group-content-color;
     }
 
     .learn-more {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 52px;
-      color: #16133E;
+      @extend %service-group-learn-more-font;
+      color: $service-group-learn-more-color;
     }
   }
 }
