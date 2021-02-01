@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<div class="main-layout">
+    <header class="header">
+        <div class="logo">
+            <a href="/"><img class="logo-img" src="./img/shape-1.png" class="shape-1">
+                <img class="logo-img" src="./img/shape-2.png" class="shape-2"></a>
+
+        </div>
+        <div class="header-link-box">
+            <a href="/blog" class="header-link blog">Blog</a>
+            <a href="/pages" class="header-link pages">Pages</a>
+            <a href="/portfolio" class="header-link portfolio">Portfolio</a>
+            <a href="/" class="header-link home">Home</a>
+        </div>
+        <div class="login">
+            <a href="/sign-up">
+                <button class="login-btn log-in" type="button">Sign Up</button>
+            </a>
+            <a href="/sign-in">
+                <button class="login-btn sign-in" type="button">Sign In</button>
+            </a>
+            <a href="/log-out">
+                <button class="login-btn sign-in" type="button">Log Out</button>
+            </a>
+        </div>
+        <div class="line"></div>
+    </header>
+    {% block body %}{% endblock %}
+    <footer class="footer">
+        <div class="general-info">
+            <div class="logo">
+                <a href="/"><img src="./img/shape-1.png" class="shape-1"></a>
+                <a href="/"><img src="./img/shape-2-white.png" class="shape-2"></a>
+            </div>
+            <em class="general-info-description">
+                We're brand strategy and digital design agency, building brands that matter in culture.
+            </em>
+            <div class="network-links">
+                <a href="https://www.instagram.com/?hl=ru" class="social-network-link"><img src="./img/insta-logo.png" alt="X"></a>
+                <a href="https://www.facebook.com/" class="social-network-link"><img src="./img/fb-logo.png" alt="X"></a>
+                <a href="https://github.com/" class="social-network-link"><img src="./img/ghub-logo.png" alt="X"></a>
+                <a href="" class="social-network-link"><img src="./img/ball-logo.png" alt="X"></a>
+                <a href="https://twitter.com/home?lang=ru" class="social-network-link"><img src="./img/twitter-logo.png" alt="X"></a>
+            </div>
+        </div>
+        <div class="services">
+            <em>Services</em>
+            <ul>
+                <li><a class="company-services" href="">Blog</a></li>
+                <li><a class="company-services" href="">Partner with freehand</a></li>
+                <li><a class="company-services" href="">Apps & Plugins</a></li>
+                <li><a class="company-services" href="">FAQ</a></li>
+                <li><a class="company-services" href="">UI Kit</a></li>
+            </ul>
+        </div>
+        <div class="company">
+            <em>Company</em>
+            <ul>
+                <li><a class="about-company" href="">About</a></li>
+                <li><a class="about-company" href="">Terms</a></li>
+                <li><a class="about-company" href="">Privacy Policy</a></li>
+                <li><a class="about-company" href="">Careers</a></li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <em>CONTACT US</em>
+            <ul>
+                <li><a class="company-contact" href="">We’re Always Happy to Help</a></li>
+                <li><a class="company-contact email-address" href="">mail@freehand.io</a></li>
+                <li>
+                    <a class="company-contact" href=""><img src="./img/foo-contact-1.png" alt="O"></a>
+                    <a class="company-contact" href=""><img src="./img/foo-contact-2.png" alt="O"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <em class="copyright-text">Copyright © 2020. Crafted with love.</em>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
